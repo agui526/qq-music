@@ -38,7 +38,7 @@ class Slider {
         }
         let x = `-${this.index * 100 / this.slides.length}%`
         let b = (this.index === 0) ? (this.slides.length - 1) : (this.index - 1)
-        console.log(this.index, b)
+        // console.log(this.index, b)
         this.$group.style.transform = `translateX(${x})`
         this.$dots.querySelector(`b[data-index="${this.index}"]`).classList.add('ui-state-active')
         this.$dots.querySelector(`b[data-index="${b}"]`).classList.remove('ui-state-active')
