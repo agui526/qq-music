@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="" href="styles/app.css">
     <title>QQ 音乐</title>
 </head>
+
 <body>
     <header class="mod_header">
         <h1>QQ 音乐</h1>
@@ -15,13 +18,30 @@
     </header>
 
     <nav class="mod_nav">
-        
+        <ul class="nav">
+            <li class="active">推荐</li>
+            <li>排行榜</li>
+            <li>搜索</li>
+        </ul>
     </nav>
 
-    <div class="ui-slider" id="slider">
+    <div class="mod_tab">
+        <div class="tab_rec">
+            <div class="ui-slider" id="slider">
 
+            </div>
+        </div>
+
+        <div class="tab_topList" id="topList">
+
+        </div>
+        <div class="tab_search" id="search">
+
+        </div>
     </div>
+
     <script src="scripts/slider.js"></script>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>

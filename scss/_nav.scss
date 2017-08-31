@@ -1,0 +1,21 @@
+.mod_nav {
+    height: $nav-height;
+    background-color: $nav-bg-color;
+    line-height: $nav-height;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > li {
+            flex: 1;
+            text-align: center;
+            color: $nav-color;
+            font-size: $nav-font-size;
+        }
+        .active {
+            color: $nav-active-color;
+        }
+    }
+}

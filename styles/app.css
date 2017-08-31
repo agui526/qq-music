@@ -10,6 +10,11 @@ h1 {
 a {
   text-decoration: none; }
 
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 .mod_header {
   height: 44px;
   background-color: #31c27c;
@@ -34,7 +39,19 @@ a {
 
 .mod_nav {
   height: 40px;
-  background-color: #aaa; }
+  background-color: #fff;
+  line-height: 40px; }
+  .mod_nav .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mod_nav .nav > li {
+      flex: 1;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px; }
+    .mod_nav .nav .active {
+      color: #31c27c; }
 
 .ui-slider {
   width: 100%;

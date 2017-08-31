@@ -4,6 +4,8 @@ class Slider {
         this.slides = options.slides
         this.interval = options.interval || 3000
         this.index = 0
+        this.dotIndex = 0
+        this.slideIntervalId;
         this.render()
         this.start()
     }
@@ -24,24 +26,26 @@ class Slider {
         this.$dots.innerHTML = this.slides.map((slide, index) => `
             <b data-index=${index}></b>
         `).join('')
+
+        this.$dots.querySelector(`b[data-index="0"]`).classList.add('ui-state-active')
     }
 
     start() {
-        setInterval(this.next.bind(this), this.interval)
+        this.slideIntervalId = setInterval(this.next.bind(this), this.interval)
     }
 
     next() {        
+        this.index += 1
         if(this.index === this.slides.length) {
             this.$group.style.transform = `translateX(0)`
             this.index = 0
-            return
         }
         let x = `-${this.index * 100 / this.slides.length}%`
-        let b = (this.index === 0) ? (this.slides.length - 1) : (this.index - 1)
-        // console.log(this.index, b)
+        this.dotIndex = (this.index === 0) ? (this.slides.length - 1) : (this.index - 1)
         this.$group.style.transform = `translateX(${x})`
         this.$dots.querySelector(`b[data-index="${this.index}"]`).classList.add('ui-state-active')
-        this.$dots.querySelector(`b[data-index="${b}"]`).classList.remove('ui-state-active')
-        this.index += 1
+        this.$dots.querySelector(`b[data-index="${this.dotIndex}"]`).classList.remove('ui-state-active')       
     }
+
+
 }

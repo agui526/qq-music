@@ -7,7 +7,8 @@
             {link: '#1', image: 'images/feat.jpg'},
             {link: '#1', image: 'images/hiha.jpg'},
             {link: '#1', image: 'images/pan.jpg'},
-            {link: '#1', image: 'images/rong.jpg'}
+            {link: '#1', image: 'images/rong.jpg'},
+            {link: '#1', image: 'images/penta.jpg'}
         ],
         interval: 3000
     });
