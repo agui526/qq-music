@@ -1,0 +1,29 @@
+#header {
+    height: $header-height;
+    background-color: $header-bg-color;
+    position: relative;
+
+    h1 {
+        display: none;
+    }
+
+    #logo, #download {
+        height: $header-a-heiht;
+        line-height: $header-a-heiht;
+    }
+
+    #logo {
+        float: left;
+        margin: 9px 0 0 10px;
+    }
+    #download {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        background-color: $header-a-bg-color;
+        padding: 0 12px;
+        font-size: $header-a-font-size;
+        color: $header-a-color;
+        border-radius: 99px;
+    }
+}

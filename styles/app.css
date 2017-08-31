@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+#header {
+  height: 44px;
+  background-color: #31c27c;
+  position: relative; }
+  #header h1 {
+    display: none; }
+  #header #logo, #header #download {
+    height: 28px;
+    line-height: 28px; }
+  #header #logo {
+    float: left;
+    margin: 9px 0 0 10px; }
+  #header #download {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #149c5a;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 99px; }
