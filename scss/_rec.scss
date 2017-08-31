@@ -1,0 +1,43 @@
+.mod_nav {
+    height: 40px;
+    background-color: #aaa;
+}
+
+.ui-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .ui-slider-group {
+        display: flex;
+        transition: all .5s;
+        // width: 500%;
+        .ui-slider-item {
+            display: flex;
+            >a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .ui-slider-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 6px;
+        text-align: center;
+
+        > b {
+            display: inline-block;
+            margin: 0 4px;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: rgba(144,144,144,.8);
+        }
+        .ui-state-active {
+            background-color: #fff;
+        }
+    }
+}
