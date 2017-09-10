@@ -2,10 +2,10 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-bottom: 14px;
     .ui-slider-group {
         display: flex;
-        transition: all .5s;
-        // width: 500%;
+        transition: all .5s; // width: 500%;
         .ui-slider-item {
             display: flex;
             >a {
@@ -22,17 +22,56 @@
         right: 0;
         bottom: 6px;
         text-align: center;
-
-        > b {
+        >b {
             display: inline-block;
             margin: 0 4px;
             width: 6px;
             height: 6px;
             border-radius: 3px;
-            background-color: rgba(144,144,144,.8);
+            background-color: rgba(144, 144, 144, .8);
         }
         .ui-state-active {
             background-color: #fff;
+        }
+    }
+}
+
+.mod_radio_station {
+    margin-left: 10px; // margin-right: 10px;
+    margin-bottom: 11px;
+    h2 {
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 11px;
+        font-weight: normal;
+    }
+    h3 {
+        font-size: 14px;
+        line-height: 18px;
+        height: 36px;
+        white-space: normal;
+        word-wrap: break-word;
+        color: #000;
+        font-weight: normal;
+    }
+    .radio_list {
+        display: flex;
+        .radio-item {
+            width: 50%;
+            margin-right: 10px;
+            .list_media {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                i {
+                    position: absolute;
+                    font-size: 32px;
+                    right: 6px;
+                    bottom: 6px;
+                    color: #fff;
+                }
+            }
         }
     }
 }

@@ -4,8 +4,9 @@
 body {
   margin: 0; }
 
-h1 {
-  margin: 0; }
+h1, h2, h3, p, input, i {
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none; }
@@ -22,8 +23,8 @@ ul, li {
   .mod_header h1 {
     display: none; }
   .mod_header #logo, .mod_header #download {
-    height: 28px;
-    line-height: 28px; }
+    height: 25px;
+    line-height: 25px; }
   .mod_header #logo {
     float: left;
     margin: 9px 0 0 10px; }
@@ -45,18 +46,29 @@ ul, li {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .mod_nav .nav > li {
+    .mod_nav .nav li {
       flex: 1;
       text-align: center;
       color: rgba(0, 0, 0, 0.6);
-      font-size: 16px; }
+      font-size: 16px;
+      position: relative; }
     .mod_nav .nav .active {
       color: #31c27c; }
+    .mod_nav .nav li.active::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #149c5a; }
 
 .ui-slider {
   width: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  margin-bottom: 14px; }
   .ui-slider .ui-slider-group {
     display: flex;
     transition: all .5s; }
@@ -82,5 +94,341 @@ ul, li {
     .ui-slider .ui-slider-dots .ui-state-active {
       background-color: #fff; }
 
+.mod_radio_station {
+  margin-left: 10px;
+  margin-bottom: 11px; }
+  .mod_radio_station h2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 11px;
+    font-weight: normal; }
+  .mod_radio_station h3 {
+    font-size: 14px;
+    line-height: 18px;
+    height: 36px;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #000;
+    font-weight: normal; }
+  .mod_radio_station .radio_list {
+    display: flex; }
+    .mod_radio_station .radio_list .radio-item {
+      width: 50%;
+      margin-right: 10px; }
+      .mod_radio_station .radio_list .radio-item .list_media {
+        position: relative; }
+        .mod_radio_station .radio_list .radio-item .list_media img {
+          width: 100%; }
+        .mod_radio_station .radio_list .radio-item .list_media i {
+          position: absolute;
+          font-size: 32px;
+          right: 6px;
+          bottom: 6px;
+          color: #fff; }
+
+.tab_topList {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  overflow: hidden; }
+  .tab_topList .topic_item {
+    height: 100px;
+    margin-bottom: 10px; }
+    .tab_topList .topic_item .topic_main {
+      background-color: #fff;
+      height: 100px; }
+      .tab_topList .topic_item .topic_main a {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        position: relative; }
+        .tab_topList .topic_item .topic_main a img {
+          width: 100%;
+          height: 100%; }
+        .tab_topList .topic_item .topic_main a span {
+          position: absolute;
+          left: 5px;
+          bottom: 7px;
+          line-height: 12px;
+          color: #fff;
+          opacity: .6;
+          font-size: 9px;
+          z-index: 10; }
+      .tab_topList .topic_item .topic_main .topic_info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .tab_topList .topic_item .topic_main .topic_info .topic_cont {
+          margin: 0 10px 0 15px; }
+          .tab_topList .topic_item .topic_main .topic_info .topic_cont .topic_tit {
+            font-size: 16px;
+            color: #000;
+            font-weight: normal;
+            margin-bottom: 5px; }
+          .tab_topList .topic_item .topic_main .topic_info .topic_cont p {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .tab_topList .topic_item .topic_main .topic_info .topic_cont .text_name {
+            color: #000;
+            margin-left: 8px;
+            margin-right: 5px; }
+
+.tab_search .search_bar {
+  background-color: #f4f4f4;
+  padding: 10px;
+  display: flex; }
+  .tab_search .search_bar .btn_cancle {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px; }
+  .tab_search .search_bar .input_bar {
+    background: #fff;
+    border-radius: 3px;
+    padding: 8px 12px 8px 35px;
+    position: relative;
+    width: 100%;
+    flex: 1; }
+    .tab_search .search_bar .input_bar #search_input {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      border: 0;
+      color: rgba(0, 0, 0, 0.3);
+      outline: 0; }
+    .tab_search .search_bar .input_bar .fa-search {
+      position: absolute;
+      top: 9px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 18px; }
+    .tab_search .search_bar .input_bar .fa-times-circle {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 20px; }
+
+.tab_search #hot_keys {
+  background: #fff;
+  padding: 15px 15px 10px 15px; }
+  .tab_search #hot_keys .result_tit {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 8px; }
+  .tab_search #hot_keys .result_tags {
+    font-size: 0; }
+    .tab_search #hot_keys .result_tags .tag_s {
+      display: inline-block;
+      font-size: 14px;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      color: #000;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      border-radius: 99px;
+      word-break: keep-all;
+      margin-bottom: 10px;
+      margin-right: 14px; }
+    .tab_search #hot_keys .result_tags .tag_hot {
+      color: #fc4524;
+      border-color: #fc4524; }
+
+.tab_search .search-results .icon-music {
+  top: 18px;
+  left: 18px;
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  background-position: 0 0;
+  background-size: 22px 30px;
+  background-repeat: no-repeat;
+  background-image: url(../images/search.png); }
+
+.tab_search .search-results .song-item {
+  display: block;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  height: 55px;
+  padding-left: 56px;
+  overflow: hidden;
+  position: relative; }
+
+.tab_search .search-results .song-name {
+  margin: 10px 0 2px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000; }
+
+.tab_search .search-results .song-artist {
+  color: #808080; }
+
+.tab_search .search-results .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.tab_search .search-loading {
+  height: 55px;
+  text-align: center;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center; }
+  .tab_search .search-loading.show {
+    display: flex; }
+  .tab_search .search-loading .loading-icon {
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 20px 20px;
+    background-image: url("../images/icon_loading.png");
+    animation: loading 1s infinite; }
+  .tab_search .search-loading .loading-text {
+    margin-left: 5px; }
+  .tab_search .search-loading .loading-done,
+  .tab_search .search-loading .loading-text {
+    color: #808080;
+    font-size: 12px; }
+
+.tab_search #record_keys {
+  background: #fff; }
+  .tab_search #record_keys li {
+    border-top: 1px solid #ddd;
+    padding: 0 15px; }
+    .tab_search #record_keys li .record_main {
+      position: relative;
+      display: block;
+      height: 44px;
+      line-height: 44px; }
+      .tab_search #record_keys li .record_main .icon_clock {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/clock_ic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -999px; }
+      .tab_search #record_keys li .record_main .record_con {
+        position: absolute;
+        left: 40px;
+        right: 50px;
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        color: #000;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .tab_search #record_keys li .record_main .icon_close {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        width: 20px;
+        height: 20px; }
+        .tab_search #record_keys li .record_main .icon_close::before, .tab_search #record_keys li .record_main .icon_close::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "";
+          background: rgba(0, 0, 0, 0.6);
+          transform: rotate(45deg); }
+        .tab_search #record_keys li .record_main .icon_close::before {
+          width: 17px;
+          height: 1px;
+          top: 8px; }
+        .tab_search #record_keys li .record_main .icon_close::after {
+          width: 1px;
+          height: 17px;
+          left: 8px; }
+  .tab_search #record_keys .record_delete {
+    text-align: center;
+    height: 44px;
+    line-height: 44px; }
+    .tab_search #record_keys .record_delete a {
+      display: inline-block;
+      line-height: 44px;
+      color: #47c88a; }
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg); }
+  8.32% {
+    transform: rotate(0deg); }
+  8.33% {
+    transform: rotate(30deg); }
+  16.65% {
+    transform: rotate(30deg); }
+  16.66% {
+    transform: rotate(60deg); }
+  24.99% {
+    transform: rotate(60deg); }
+  25% {
+    transform: rotate(90deg); }
+  33.32% {
+    transform: rotate(90deg); }
+  33.33% {
+    transform: rotate(120deg); }
+  41.65% {
+    transform: rotate(120deg); }
+  41.66% {
+    transform: rotate(150deg); }
+  49.99% {
+    transform: rotate(150deg); }
+  50% {
+    transform: rotate(180deg); }
+  58.32% {
+    transform: rotate(180deg); }
+  58.33% {
+    transform: rotate(210deg); }
+  66.65% {
+    transform: rotate(210deg); }
+  66.66% {
+    transform: rotate(240deg); }
+  74.99% {
+    transform: rotate(240deg); }
+  75% {
+    transform: rotate(270deg); }
+  83.32% {
+    transform: rotate(270deg); }
+  83.33% {
+    transform: rotate(300deg); }
+  91.65% {
+    transform: rotate(300deg); }
+  91.66% {
+    transform: rotate(330deg); }
+  99.99% {
+    transform: rotate(330deg); } }
+
+.hide {
+  display: none; }
+
+.noscroll {
+  overflow: hidden; }
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 body {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  font: 12px/1.5 "hiragino sans gb",arial;
+  color: #555; }

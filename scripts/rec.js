@@ -1,0 +1,1 @@
+document.querySelector('#rec-view').style.display = 'none'

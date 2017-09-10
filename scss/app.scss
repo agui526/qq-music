@@ -3,7 +3,12 @@
 @import "header";
 @import "nav";
 @import "rec";
+@import "topList";
+@import "search";
+@import "comm";
 
 body {
     background-color: $body-bg-color;
+    font: 12px/1.5 "hiragino sans gb",arial;
+    color: #555;
 }

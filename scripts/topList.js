@@ -1,0 +1,1 @@
+document.querySelector('#rank-view').style.display = 'none'

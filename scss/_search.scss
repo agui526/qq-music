@@ -1,0 +1,293 @@
+.tab_search {
+    .search_bar {
+        background-color: #f4f4f4;
+        padding: 10px;
+        display: flex;
+        .btn_cancle {
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+        } // .hide {
+        //     display: none;
+        // }
+        .input_bar {
+            background: #fff;
+            border-radius: 3px;
+            padding: 8px 12px 8px 35px;
+            position: relative;
+            width: 100%;
+            flex: 1;
+            #search_input {
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                border: 0;
+                color: rgba(0, 0, 0, .3);
+                outline: 0;
+            }
+            .fa-search {
+                position: absolute;
+                top: 9px;
+                left: 10px;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                color: rgba(0, 0, 0, .3);
+                font-size: 18px;
+            }
+            .fa-times-circle {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                color: rgba(0, 0, 0, .3);
+                font-size: 20px;
+            }
+        }
+    }
+    #hot_keys {
+        background: #fff;
+        padding: 15px 15px 10px 15px;
+        .result_tit {
+            color: rgba(0, 0, 0, .6);
+            margin-bottom: 8px;
+        }
+        .result_tags {
+            font-size: 0;
+            .tag_s {
+                display: inline-block;
+                font-size: 14px;
+                padding: 0 10px;
+                height: 30px;
+                line-height: 30px;
+                color: #000;
+                border: 1px solid rgba(0, 0, 0, .6);
+                border-radius: 99px;
+                word-break: keep-all;
+                margin-bottom: 10px;
+                margin-right: 14px;
+            }
+            .tag_hot {
+                color: #fc4524;
+                border-color: #fc4524;
+            }
+        }
+    }
+    .search-results {
+        .icon-music {
+            top: 18px;
+            left: 18px;
+            width: 22px;
+            height: 20px;
+            position: absolute;
+            background-position: 0 0;
+            background-size: 22px 30px;
+            background-repeat: no-repeat;
+            background-image: url(../images/search.png);
+        }
+        .song-item {
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            height: 55px;
+            padding-left: 56px;
+            overflow: hidden;
+            position: relative;
+        }
+        .song-name {
+            margin: 10px 0 2px;
+            line-height: 18px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+        }
+        .song-artist {
+            color: #808080;
+        }
+        .ellipsis {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .search-loading {
+        height: 55px;
+        text-align: center;
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        &.show {
+            display: flex;
+        }
+        .loading-icon {
+            top: -2px;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            background-size: 20px 20px;
+            background-image: url('../images/icon_loading.png');
+            animation: loading 1s infinite;
+        }
+        .loading-text {
+            margin-left: 5px;
+        }
+        .loading-done,
+        .loading-text {
+            color: #808080;
+            font-size: 12px;
+        }
+    }
+    #record_keys {
+        background: #fff;
+        li {
+            border-top: 1px solid #ddd;
+            padding: 0 15px;
+            .record_main {
+                position: relative;
+                display: block;
+                height: 44px;
+                line-height: 44px;
+                .icon_clock {
+                    position: absolute;
+                    left: 0;
+                    top: 12px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../images/clock_ic.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    text-indent: -999px;
+                }
+                .record_con {
+                    position: absolute;
+                    left: 40px;
+                    right: 50px;
+                    display: block;
+                    height: 44px;
+                    line-height: 44px;
+                    color: #000;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .icon_close {
+                    position: absolute;
+                    right: 0;
+                    top: 12px;
+                    width: 20px;
+                    height: 20px;
+                    &::before, &::after {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        content: "";
+                        background: rgba(0, 0, 0, .6);
+                        transform: rotate(45deg);
+                    }
+                    &::before {
+                        width: 17px;
+                        height: 1px;
+                        top: 8px;
+                    }
+                    &::after {
+                        width: 1px;
+                        height: 17px;
+                        left: 8px;
+                    }
+                }
+            }
+        }
+        .record_delete {
+            text-align: center;
+            height: 44px;
+            line-height: 44px;
+
+            a {
+                display: inline-block;
+                line-height: 44px;
+                color: #47c88a;
+            }
+        }
+    }
+    @keyframes loading {
+        from {
+            transform: rotate(0deg)
+        }
+        8.32% {
+            transform: rotate(0deg)
+        }
+        8.33% {
+            transform: rotate(30deg)
+        }
+        16.65% {
+            transform: rotate(30deg)
+        }
+        16.66% {
+            transform: rotate(60deg)
+        }
+        24.99% {
+            transform: rotate(60deg)
+        }
+        25% {
+            transform: rotate(90deg)
+        }
+        33.32% {
+            transform: rotate(90deg)
+        }
+        33.33% {
+            transform: rotate(120deg)
+        }
+        41.65% {
+            transform: rotate(120deg)
+        }
+        41.66% {
+            transform: rotate(150deg)
+        }
+        49.99% {
+            transform: rotate(150deg)
+        }
+        50% {
+            transform: rotate(180deg)
+        }
+        58.32% {
+            transform: rotate(180deg)
+        }
+        58.33% {
+            transform: rotate(210deg)
+        }
+        66.65% {
+            transform: rotate(210deg)
+        }
+        66.66% {
+            transform: rotate(240deg)
+        }
+        74.99% {
+            transform: rotate(240deg)
+        }
+        75% {
+            transform: rotate(270deg)
+        }
+        83.32% {
+            transform: rotate(270deg)
+        }
+        83.33% {
+            transform: rotate(300deg)
+        }
+        91.65% {
+            transform: rotate(300deg)
+        }
+        91.66% {
+            transform: rotate(330deg)
+        }
+        99.99% {
+            transform: rotate(330deg)
+        }
+    }
+}

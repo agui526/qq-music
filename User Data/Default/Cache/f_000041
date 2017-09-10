@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>蒙面唱将猜猜猜第二季-QQ音乐</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    
+    <meta name="description" content="大张伟、ella、陶晶莹、巫启贤、QQ音乐">
+    <meta name="keywords" content="大张伟、ella、陶晶莹、巫启贤、QQ音乐">
+    
+    <meta name="applicable-device" content="mobile">
+    <meta itemprop="name" content="听歌猜人！蒙面唱将重现江湖！">
+    <meta itemprop="description" content="只听歌声，这波歌手你能猜对几个？！">
+    <meta itemprop="image" content="https://y.gtimg.cn/music/common/upload/t_tv_songShow/134803.jpg?max_age=2592000">
+    <link rel="stylesheet" href="//y.gtimg.cn/mediastyle/mobile/event/template_variety_show_v2/index_v2.css?ver=20170821&max_age=2592000">
+    <style>
+        /*自由配置项_S*/
+        .c_txt3{color:#d45f1a;}/*高亮字色、镂空按钮色*/
+        .c_bg1{background-color:#fef9f5;}/*页面背景色*/
+        /*自由配置项_E*/
+
+        
+        /*浅底配色_S*/
+        .c_txt1{color:#2b2322;}/*常应用于正文字色*/
+        .c_bor1,
+        .c_bor1::after{border-color:rgba(43,35,34,.1);}
+        .c_bg2{background-color:rgba(0,0,0,.1);}/*常应用于内容块底色*/
+        /*浅底配色_E*/
+        
+
+        .popup_history__cont{-webkit-overflow-scrolling: touch;margin-top: 32px;overflow: scroll;overflow-x: hidden;height: 100%}
+
+    </style>
+    <script>
+        
+        // debug=true;
+    </script>
+</head>
+
+
+<body class="c_bg1">
+<svg style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="play" viewbox="0 0 54 54">
+            <title>播放</title>
+            <path d="M27,0C12.088,0,0,12.088,0,27c0,14.913,12.088,27,27,27s27-12.088,27-27S41.912,0,27,0z M27,51
+
+			C13.745,51,3,40.256,3,27C3,13.745,13.745,3,27,3s24,10.745,24,24C51,40.256,40.255,51,27,51z M24.604,18.695
+
+			c-0.897-0.896-2.353-0.896-3.25,0v16.61c0.897,0.896,2.353,0.896,3.25,0l11.85-6.106c0.897-0.896,0.897-2.352,0-3.25
+
+			L24.604,18.695z"/>
+        </symbol>
+        <symbol id="pause" viewbox="0 0 54 54">
+            <title>暂停</title>
+            <path d="M23,18h-4c-0.553,0-1,0.447-1,1v16c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1V19
+
+			C24,18.447,23.553,18,23,18z M27,0C12.088,0,0,12.088,0,27c0,14.911,12.088,27,27,27s27-12.089,27-27C54,12.088,41.912,0,27,0z
+
+			 M27,50.563C13.986,50.563,3.438,40.013,3.438,27C3.438,13.986,13.986,3.437,27,3.437S50.563,13.986,50.563,27
+
+			C50.563,40.013,40.014,50.563,27,50.563z M35,18h-4c-0.553,0-1,0.447-1,1v16c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1V19
+
+			C36,18.447,35.553,18,35,18z"/>
+        </symbol>
+        <symbol id="mv" viewbox="0 0 54 54">
+            <title>mv</title>
+            <path d="M39.235,39.328c0,2.208-1.79,4-3.994,4H7.627c-2.208,0-3.994-1.787-3.994-4V14.633c0-2.208,1.79-4,3.994-4
+
+	h27.614c2.208,0,3.994,1.787,3.994,4V39.328z M51.21,16.283l-8.342,5.491v-7.141c0-4.219-3.413-7.633-7.627-7.633H7.627
+
+	C3.416,7,0,10.419,0,14.633v24.695c0,4.219,3.413,7.633,7.627,7.633h27.614c4.21,0,7.627-3.419,7.627-7.633v-7.112l8.301,5.203
+
+	C52.737,38.402,54,37.699,54,35.856V17.784C54,15.938,52.751,15.268,51.21,16.283L51.21,16.283z M10.928,14.265H10.76
+
+	c-1.933,0-3.494,1.563-3.494,3.49c0,1.924,1.564,3.49,3.494,3.49h0.168c1.933,0,3.494-1.563,3.494-3.49
+
+	C14.422,15.832,12.857,14.265,10.928,14.265"/>
+        </symbol>
+        <symbol id="download" viewbox="0 0 54 54">
+            <title>下载</title>
+            <path d="M26.983,50.403H10.732c-2.198,0-4.016-1.871-4.016-4.211H2.577c0,4.568,3.634,8.308,8.155,8.308H27.5h16.768
+
+	c4.521,0,8.155-3.74,8.155-8.308h-4.139c0,2.34-1.818,4.211-4.016,4.211H26.983z M26.268,38.572h2.937L7.066,16.433L4.129,19.37
+
+	l22.139,22.139l1.468,1.469l1.469-1.469L51.514,19.2l-2.937-2.937L26.268,38.572z M25.423,4.035v31.129
+
+	c0,1.147,0.93,2.077,2.077,2.077s2.077-0.93,2.077-2.077V4.035V0.5h-4.154V4.035z"/>
+        </symbol>
+        <symbol id="share" viewbox="0 0 54 54">
+            <title>分享</title>
+            <path d="M49.18,8.015L19.093,38.178l-3.059-3.051L46.265,4.82H34.06V0.5H53.5v19.44h-4.32V8.015
+
+	z M49.18,29.209v14.498c0,3.577-2.895,6.473-6.477,6.473H10.297c-3.577,0-6.477-2.903-6.477-6.49V11.31
+
+	c0-3.585,2.904-6.49,6.487-6.49h13.581V0.5H10.307C4.338,0.5-0.5,5.34-0.5,11.31v32.38c0,5.971,4.832,10.81,10.797,10.81h32.407
+
+	c5.967,0,10.797-4.83,10.797-10.793V29.209H49.18z"/>
+        </symbol>
+    </defs>
+</svg>
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="icon_praise" viewbox="0 0 32 32">
+            <title>点赞</title>
+            <path d="M27.004,11.435c0,0-0.594,0-6.938,0C22.63,4.384,18.671,0.5,15.542,0.5c-2.414,0-2.941,1.82-3.544,4.233
+					c-1.656,6.161-4.487,6.627-4.487,6.627l0,0H1.477c-0.666,0-1.207,0.54-1.207,1.206v18.727c0,0.666,0.541,1.207,1.207,1.207
+					c0,0,20.545-0.009,22.121-0.009c1.889,0,4.324-2.024,4.782-4.507c1.81-8.879,1.81-7.333,2.338-11.349
+					C30.981,11.954,27.004,11.435,27.004,11.435z M28.305,16.506c-0.084,0.981-2.294,10.986-2.294,10.986s-0.421,2.587-3.277,2.587
+					c-2.856,0-13.414,0-13.414,0V13.202c0,0,2.652-1.332,3.77-4.562c1.207-3.142,1.886-5.053,1.961-5.481
+					c0.013-0.226,0.894-0.439,1.898,0.277c1.005,0.716,1.634,2.551,1.484,4.323c-0.239,1.81-0.792,3.281-1.082,4.688
+					c-0.047,1.429,0.859,1.381,1.961,1.381c0.93,0,7.136,0,7.136,0S28.503,13.848,28.305,16.506z"/>
+        </symbol>
+        <symbol id="icon_comment" viewbox="0 0 32 32">
+            <title>评论</title>
+            <path d="M27.278,1.098H4.721C2.942,1.098,1.5,2.541,1.5,4.32v18.528c0,1.778,1.442,3.22,3.221,3.22h7.219
+					l4.024,4.833l4.06-4.833h7.253c1.78,0,3.222-1.442,3.222-3.22V4.32C30.5,2.541,29.058,1.098,27.278,1.098z M28.083,21.236
+					c0,1.337-1.082,2.417-2.417,2.417h-6.433L16,27.681l-3.233-4.028H6.333c-1.334,0-2.417-1.08-2.417-2.417V5.931
+					c0-1.334,1.083-2.417,2.417-2.417h19.333c1.335,0,2.417,1.082,2.417,2.417V21.236z M9.555,11.57c-0.89,0-1.61,0.721-1.61,1.611
+					c0,0.89,0.721,1.611,1.61,1.611c0.89,0,1.612-0.72,1.612-1.611C11.167,12.29,10.446,11.57,9.555,11.57z M16,11.57
+					c-0.89,0-1.612,0.721-1.612,1.611c0,0.89,0.722,1.611,1.612,1.611c0.89,0,1.611-0.72,1.611-1.611
+
+					C17.611,12.29,16.89,11.57,16,11.57z M22.445,11.57c-0.89,0-1.611,0.721-1.611,1.611c0,0.89,0.721,1.611,1.611,1.611
+					c0.89,0,1.611-0.72,1.611-1.611C24.055,12.29,23.334,11.57,22.445,11.57z"/>
+        </symbol>
+    </defs>
+</svg>
+
+<section class="wrap js_warp">
+    
+    <section class="mod_top">
+        <h1 class="hide">蒙面唱将猜猜猜第二季第1期 第1期</h1>
+        <span class="top__bg"><img src="//y.gtimg.cn/music/common/upload/t_tv_songShow/136801.jpg?max_age=2592000" class="top__bg_img js_head_pic" alt="蒙面唱将猜猜猜第二季第1期 第1期"></span>
+        <div class="top__other">
+            <span class="top__people_count"><em id="js_person_num"></em>人参与</span>
+            <div id="js_friend_wrap" class="top__listening">
+                <ul id="js_friend_info" class="listening_list" style="-webkit-transform:translateX(300px)">
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:;" class="top__btn js_playallsong" title="播放全部">
+            <img src="//y.gtimg.cn/music/photo_new/T011R208x60M000000EoZ6v3Nn1ER.png?max_age=2592000" class="top__btn_img" alt="播放全部">
+        </a>
+    </section>
+    
+
+    
+    <section class="mod_hit">
+        <ul id="js_curtoplist" class="hit_list hit_list--special js_song_list">
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">1</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137198.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">算你狠</h3>
+                    <p class="hit_list__desc c_txt1">张智霖</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763081" data-name="算你狠" data-mid="002uzE1b4ayu2y">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763081">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763081">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763081">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="算你狠-张智霖" data-songid="203763081" data-desc="算你狠">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">2</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137335.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">龙卷风</h3>
+                    <p class="hit_list__desc c_txt1">我们白着呢 / 李荣浩</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763080" data-name="龙卷风" data-mid="001HfHOk0VY6KQ">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763080">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763080">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763080">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="龙卷风-我们白着呢" data-songid="203763080" data-desc="龙卷风">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">3</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137197.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">如果有一天</h3>
+                    <p class="hit_list__desc c_txt1">李荣浩</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763079" data-name="如果有一天" data-mid="003A7PaI1PVdFv">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763079">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763079">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763079">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="如果有一天-李荣浩" data-songid="203763079" data-desc="如果有一天">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">4</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137122.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">屋顶</h3>
+                    <p class="hit_list__desc c_txt1">闲不住的铁娘子 / 没朋友的球鞋侠</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763076" data-name="屋顶" data-mid="000WkbEJ2FVvfd">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763076">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763076">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763076">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="屋顶-闲不住的铁娘子" data-songid="203763076" data-desc="屋顶">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">5</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137120.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">眼泪</h3>
+                    <p class="hit_list__desc c_txt1">闲不住的铁娘子</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763078" data-name="眼泪" data-mid="000EHCiA1fTyWl">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763078">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763078">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763078">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="眼泪-闲不住的铁娘子" data-songid="203763078" data-desc="眼泪">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">6</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137123.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">你就不要想起我</h3>
+                    <p class="hit_list__desc c_txt1">宝宝翻身把歌唱</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763075" data-name="你就不要想起我" data-mid="004MjsaN1Axmqh">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763075">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763075">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763075">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="你就不要想起我-宝宝翻身把歌唱" data-songid="203763075" data-desc="你就不要想起我">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">7</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137199.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">我的心里只有你没有他</h3>
+                    <p class="hit_list__desc c_txt1">成方圆</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763082" data-name="我的心里只有你没有他" data-mid="002N22tO3ucX7F">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763082">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763082">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763082">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="我的心里只有你没有他-成方圆" data-songid="203763082" data-desc="我的心里只有你没有他">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">8</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137121.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">小幸运</h3>
+                    <p class="hit_list__desc c_txt1">没朋友的球鞋侠</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763077" data-name="小幸运" data-mid="004AnjYr0uRPGk">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763077">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763077">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763077">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="小幸运-没朋友的球鞋侠" data-songid="203763077" data-desc="小幸运">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        <li class="hit_list__item c_bor1 js_song">
+        <span class="hit_list__index c_txt3">9</span>
+        <a class="hit_list__avatar">
+            <img src="//y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137336.png?max_age=2592000" class="hit_list__avatar_img" alt="">
+        </a>
+        <div class="hit_list__bd">
+            <div class="hit_list__info">
+                <div class="hit_list__txt">
+                    <h3 class="hit_list__tit c_txt1">夜夜夜夜</h3>
+                    <p class="hit_list__desc c_txt1">宝宝翻身把歌唱 / 成方圆</p>
+                </div>
+                
+                <div class="hit_list__other">
+                    <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="203763083" data-name="夜夜夜夜" data-mid="000afJqF0H7XhH">投票</a>
+                    <span class="hit_list__count c_txt1 js_vote_num" data-id="203763083">0票</span>
+                </div>
+                
+            </div>
+            <div class="hit_list__control">
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="203763083">
+                    <svg class="icon_svg c_txt1 icon_play_r">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>
+                    </svg>
+                </a>
+                
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="203763083">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="夜夜夜夜-宝宝翻身把歌唱" data-songid="203763083" data-desc="夜夜夜夜">
+                    <svg class="icon_svg c_txt1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+        
+        </ul>
+
+        <div class="hit__ft">
+            <a href="javascript:;" class="hit__more c_txt1 js_showrule">打榜规则 &gt;</a>
+            <a href="javascript:;" class="hit__more c_txt1 js_dlg_show" data-dlg="history">往期回顾 &gt;</a>
+        </div>
+    </section>
+    
+    <article class="mod_rank">
+        <header class="mod_tit c_txt1">
+            
+            <h2 class="tit__txt">人气歌曲总榜</h2>
+            
+        </header>
+        <section class="rank__bd">
+            <ul class="rank_list" id="js_top3list"></ul>
+            <a href="javascript:;" class="rank__more c_txt1 js_dlg_show" data-dlg="total_toplist">完整榜单 &gt;</a>
+        </section>
+    </article>
+    
+    
+    
+    <article class="mod_playlist js_mod_gedan">
+        <header class="mod_tit c_txt1">
+            
+            <h2 class="tit__txt">推荐歌单</h2>
+            
+        </header>
+        <section class="playlist__bd">
+            <ul class="qui_equal_col qui_equal_col--3 js_songlist"></ul>
+            <a href="javascript:;" class="playlist__more c_txt1 js_moreGedan js_dlg_show" data-dlg="gedan" data-tj="moreGedan">更多歌单 &gt;</a>
+        </section>
+    </article>
+    
+
+    
+    <article class="mod_friendlink js_exclusive">
+        <header class="mod_tit c_txt1">
+            
+            <h2 class="tit__txt">独家综艺</h2>
+            
+        </header>
+        <section class="friendLink__bd">
+            <ul id="js_topiclist" class="friendLink_list">
+                
+                <li class="friendLink_list__item js_topic_click" data-id="119" data-href="https://y.qq.com/m/act/thecomingone/v2/index.html" >
+                    <img data-src="//y.gtimg.cn/music/common/upload/t_tv_songShow_topic/119780.png?max_age=2592000" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="friendLink_list__img" alt="杨幂薛之谦见证未来偶像诞生">
+                    <h3 class="friendLink_list__txt c_txt1">杨幂薛之谦见证未来偶像诞生</h3>
+                    <p class="friendLink_list__desc c_txt1"></p>
+                </li>
+                <li class="friendLink_list__item js_topic_click" data-id="118" data-href="https://y.qq.com/m/act/singchina2/index.html" >
+                    <img data-src="//y.gtimg.cn/music/common/upload/t_tv_songShow_topic/121100.png?max_age=2592000" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="friendLink_list__img" alt="周杰伦陈奕迅同台抢人">
+                    <h3 class="friendLink_list__txt c_txt1">周杰伦陈奕迅同台抢人</h3>
+                    <p class="friendLink_list__desc c_txt1"></p>
+                </li>
+                <li class="friendLink_list__item js_topic_click" data-id="117" data-href="https://y.qq.com/m/act/Rapofchina/v2/index.html" >
+                    <img data-src="//y.gtimg.cn/music/common/upload/t_tv_songShow_topic/119781.png?max_age=2592000" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="friendLink_list__img" alt="吴亦凡力撑嘻哈，你有freestyle吗？">
+                    <h3 class="friendLink_list__txt c_txt1">吴亦凡力撑嘻哈，你有freestyle吗？</h3>
+                    <p class="friendLink_list__desc c_txt1"></p>
+                </li>
+            </ul>
+            <a href="javascript:;" class="friendLink__more c_txt1 js_dlg_show" data-dlg="topic" data-tj="moretopic">更多综艺 &gt;</a>
+        </section>
+    </article>
+    
+    
+    
+    <div class="mod_comment">
+        <h2 class="comment__tit c_txt1">精彩评论</h2>
+
+        <div class="comment__bd">
+            
+            
+            <div class="comment_type js_repin_cont">
+                <div class="comment_type__hd c_bor1">
+                    <h2 class="comment_type__tit c_txt1">热评</h2>
+                </div>
+                <div class="comment_add">
+                    <div class="comment_add__input_box c_bg2">
+                        <input class="comment_add__input c_txt1 js_cmt_input" type="text" placeholder="添加评论">
+                    </div>
+                    <a class="comment_add__btn c_txt3 js_cmt_btn" href="javascript:;">发布</a>
+                </div>
+                <p class="comment__null c_txt1 c_txt2 js_repin_nodata" style="display:none">还没有人评论, 来抢沙发吧</p>
+                <ul class="comment_list js_reping"></ul>
+                
+            </div>
+            
+
+            
+            <div class="comment_type js_newpin_cont">
+                <div class="comment_type__hd c_bor1">
+                    <h2 class="comment_type__tit c_txt1">最新评论</h2>
+                </div>
+                
+                <p class="comment__null c_txt1 c_txt2 js_newpin_nodata" style="display:none">还没有人评论, 来抢沙发吧</p>
+                <ul class="comment_list js_newping"></ul>
+                <div class="comment_loading">
+                    <a href="javascript:;" class="comment_loading__txt c_txt1 c_txt2 js_newping_more">查看更多</a>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+    
+    </section>
+
+
+
+
+<section class="popup_history c_bg1 js_dlg" data-dlg="history">
+    <a href="javascript:;" class="popup_history__close c_txt1 js_dlg_close">关闭</a>
+    <div class="popup_history__cont">
+        <div style="-webkit-transform:translateY(0px)">
+            
+            
+            <div class="popup_history__grid">
+                <h3 class="popup_history__tit c_txt3">· 表演赛</h3>
+                <ul class="history_list js_exclusive_list">
+                    <li class="history_list__item c_bor1">
+                        <a href="javascript:;" class="history_list__box js_calendar_show" data-id="249" data-headpic="https://y.gtimg.cn/music/common/upload/t_tv_songShow/136801.jpg">
+                            <div class="popup_history__bd">
+                                <p class="popup_history__txt c_txt1"><em>第1期</em>2017-09-03</p>
+                                <p class="popup_history__desc c_txt1 c_txt2">这身形这声音……不是李荣浩还有谁？</p>
+                            </div>
+                            <i class="popup_history__arr c_txt1"></i>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+            
+
+            <div class="popup_history__intro c_txt1">
+                <p class="c_txt1">《蒙面唱将猜猜猜第二季》是由江苏卫视和灿星制作携手打造的大型音乐悬疑竞猜类真人秀节目。 节目将于2017年9月3日起每周日晚20：30在江苏卫视播出，独家战略音乐合作平台QQ音乐。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="popup_history c_bg1 js_dlg" data-dlg="toplist">
+    <a href="javascript:;" class="popup_history__close c_txt1 js_dlg_close">关闭</a>
+    <div class="popup_history__cont">
+        <div style="-webkit-transform:translateY(0px)">
+            <article class="mod_hit">
+                <header class="mod_tit c_txt1">
+                    
+                    <h2 class="tit__txt">人气歌曲总榜</h2>
+                    
+                </header>
+
+                <section>
+                    <ul class="hit_list js_totalrank"></ul>
+                </section>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="popup_history c_bg1 js_dlg js_dlg_gedan" data-dlg="gedan">
+    <a href="javascript:;" class="popup_history__close c_txt1 js_dlg_close">关闭</a>
+    <div class="popup_history__cont">
+        <div style="-webkit-transform:translateY(0px)">
+            <article class="mod_playlist">
+                <header class="mod_tit c_txt1">
+                    
+                    <h2 class="tit__txt">歌单</h2>
+                    
+                </header>
+                <section class="playlist__bd">
+                    <ul class="qui_equal_col qui_equal_col--3 js_songlist"></ul>
+                </section>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="popup_history c_bg1 js_dlg" data-dlg="topic">
+    <a href="javascript:;" class="popup_history__close c_txt1 js_dlg_close">关闭</a>
+    <div class="popup_history__cont">
+        <div style="-webkit-transform:translateY(0px)">
+            <article class="mod_playlist">
+                <header class="mod_tit c_txt1">
+                    
+                    <h2 class="tit__txt">独家综艺</h2>
+                    
+                </header>
+                <section class="friendLink__bd">
+                    <ul id="js_alltopiclist" class="friendLink_list">
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="popup_history c_bg1 js_dlg" data-dlg="total_toplist">
+    <a href="javascript:;" class="popup_history__close c_txt1 js_dlg_close">关闭</a>
+    <div class="popup_history__cont">
+        <div style="-webkit-transform:translateY(0px)">
+            <article class="mod_hit">
+                <header class="mod_tit c_txt1">
+                    
+                    <h2 class="tit__txt">人气歌曲总榜</h2>
+                    
+                </header>
+
+                <section>
+                    <ul id="js_totaltoplist" class="hit_list"></ul>
+                </section>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="js_popup_rule" class="qui_dialog js_popup" style="display:none">
+    <div class="qui_dialog__mask">
+        <div class="qui_dialog__box c_txt3">
+            <div class="qui_dialog__hd">
+                <h6 class="qui_dialog__tit">榜单规则</h6>
+            </div>
+            <div class="qui_dialog__bd">
+                <p class="qui_dialog__para">①每日进入本页面并登录，即可获得3票“签到票”。如签到票在每日24:00之前未使用则清零；</p><p class="qui_dialog__para">②每日在QQ音乐（手机客户端、PC客户端，电脑网页版）登录并完整收听本节目任一歌曲，即可获得1票“听歌票”，每个用户每天可获得听歌票不超过10票，将于次日中午12点到账，听歌票在本活动期间内不清零；</p><p class="qui_dialog__para">③投票优先使用签到票，再使用听歌票；</p><p class="qui_dialog__para">④每首歌曲票数 = 签到票*1 + 听歌票*1 + 送礼的乐币数*5；</p><p class="qui_dialog__para">⑤每个用户每天可投票数为账户内已经累积的所有“签到票”和“听歌票”；送礼则没有上限；</p><p class="qui_dialog__para">⑥在本活动期间结束之日，如听歌票和签到票未使用完毕，即全部清零失效；</p><p class="qui_dialog__para">⑦活动时间：2017.9.03~2017.11.25 24:00；</p><p class="qui_dialog__para">⑧腾讯公司在法律允许的范围之内享有对本活动进行解释的权利。</p>
+            </div>
+            <div class="qui_dialog__ft">
+                <a class="qui_dialog__btn qui_dialog__btn--primary c_txt3 js_hide_popup" href="javascript:;">我知道了</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="js_vote_panel" class="qui_dialog js_popup" style="display:none">
+    <div class="qui_dialog__mask">
+        <div class="qui_dialog__box">
+            <div class="qui_dialog__hd">
+                <h4 class="qui_dialog__tit">我要投票</h4>
+            </div>
+            <div class="qui_dialog__bd">
+                <div class="support_col">
+                    <p class="support_col__text">支持歌曲：<span id="js_support_song"></span></p>
+                    <p class="support_col__tips">剩余<span class="sp_txt" id="js_remain_ticket"></span>票</p>
+                </div>
+                <div class="support_col">
+                    <a class="js_minus support_act_btn support_act_btn--minus" href="javascript:;">-</a>
+                    <input class="support_act__input" type="text" value="1" id="js_vote_num_input">
+                    <a class="js_plus support_act_btn support_act_btn--plus" href="javascript:;">+</a>
+                </div>
+            </div>
+            <div class="qui_dialog__ft">
+                <a class="qui_dialog__btn js_hide_popup" href="javascript:;">关闭</a>
+                <a id="js_submit_vote" class="qui_dialog__btn qui_dialog__btn--primary" href="javascript:;">投票</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="qui_dialog js_popup js_popup_playsong" style="display:none">
+    <div class="qui_dialog__mask">
+        <div class="qui_dialog__box c_txt3">
+            <div class="qui_dialog__hd"></div>
+            <div class="qui_dialog__hd">
+                <p class="qui_dialog__para">使用QQ音乐播放，提升3倍流畅度。</p>
+            </div>
+            <div class="qui_dialog__ft">
+                <a class="qui_dialog__btn qui_dialog__btn--primary c_txt3 js_install" href="javascript:;">现在安装</a>
+                <a class="qui_dialog__btn js_hide_popup" href="javascript:;">关闭</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="qui_dialog js_popup js_popup_voted" style="display:none">
+    <div class="qui_dialog__mask">
+        <div class="qui_dialog__box c_txt3">
+            <div class="qui_dialog__hd"></div>
+            <div class="qui_dialog__hd">
+                <p class="qui_dialog__para">您已经投过票了，分享给好友，帮忙拉票吧~</p>
+            </div>
+            <div class="qui_dialog__ft">
+                <a class="qui_dialog__btn qui_dialog__btn--primary c_txt3 js_popup_share" href="javascript:;">分享</a>
+                <a class="qui_dialog__btn js_hide_popup" href="javascript:;">关闭</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="//y.gtimg.cn/music/h5/lib/js/zepto-1.0.min.js?max_age=2592000"></script>
+<script type="text/javascript" src="//y.gtimg.cn/music/h5/lib/js/music-1.0.min.js?max_age=604800"></script>
+<script type="text/javascript">
+    function loading(a,b,c){function j(){d.hide!==!1&&e&&(e.css("opacity",0),setTimeout(function(){e.hide()},500)),b&&b instanceof Array&&setTimeout(function(){for(var a=0;a<b.length;a++)(new Image).src=b[a]},100),"function"==typeof c&&c()}function k(b){var c=b/i;f&&f.css("-webkit-transform","translateY("+50*(1-c)+"%)"),b>=a.length&&l&&l()}function l(){l=null,clearTimeout(m),g=m=null,j()}var e,f,g,h,i,m,d={};return a&&a.pre?(d=a,a=d.pre,b=d.delay,c=d.callback):"function"==typeof b&&(c=b,b=null),g=[],h=0,i=a.length,d.dom!==!1&&(e=$(d.dom||".js_loading"),f=e.find(".js_loading_progress")),i?(setTimeout(function(){for(var b=0;i>b;b++)g[b]=new Image,g[b].src=a[b],g[b].onload=g[b].onerror=g[b].onabort=function(){k(++h)}},0),m=setTimeout(function(){k(a.length)},2e4),void 0):j()}
+    var g_coder=(function(){var _this=this;var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(input){var output="";var chr1,chr2,chr3,enc1,enc2,enc3,enc4;var i=0;input=Base64._utf8_encode(input);while(i<input.length){chr1=input.charCodeAt(i++);chr2=input.charCodeAt(i++);chr3=input.charCodeAt(i++);enc1=chr1>>2;enc2=((chr1&3)<<4)|(chr2>>4);enc3=((chr2&15)<<2)|(chr3>>6);enc4=chr3&63;if(isNaN(chr2)){enc3=enc4=64}else{if(isNaN(chr3)){enc4=64}}output=output+Base64._keyStr.charAt(enc1)+Base64._keyStr.charAt(enc2)+Base64._keyStr.charAt(enc3)+Base64._keyStr.charAt(enc4)}return output},decode:function(input){var output="";var chr1,chr2,chr3;var enc1,enc2,enc3,enc4;var i=0;input=input.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(i<input.length){enc1=Base64._keyStr.indexOf(input.charAt(i++));enc2=Base64._keyStr.indexOf(input.charAt(i++));enc3=Base64._keyStr.indexOf(input.charAt(i++));enc4=Base64._keyStr.indexOf(input.charAt(i++));chr1=(enc1<<2)|(enc2>>4);chr2=((enc2&15)<<4)|(enc3>>2);chr3=((enc3&3)<<6)|enc4;output=output+String.fromCharCode(chr1);if(enc3!=64){output=output+String.fromCharCode(chr2)}if(enc4!=64){output=output+String.fromCharCode(chr3)}}output=Base64._utf8_decode(output);return output},_utf8_encode:function(string){string=string.replace(/\r\n/g,"\n");var utftext="";for(var n=0;n<string.length;n++){var c=string.charCodeAt(n);if(c<128){utftext+=String.fromCharCode(c)}else{if((c>127)&&(c<2048)){utftext+=String.fromCharCode((c>>6)|192);utftext+=String.fromCharCode((c&63)|128)}else{utftext+=String.fromCharCode((c>>12)|224);utftext+=String.fromCharCode(((c>>6)&63)|128);utftext+=String.fromCharCode((c&63)|128)}}}return utftext},_utf8_decode:function(utftext){var string="";var i=0;var c=c1=c2=0;while(i<utftext.length){c=utftext.charCodeAt(i);if(c<128){string+=String.fromCharCode(c);i++}else{if((c>191)&&(c<224)){c2=utftext.charCodeAt(i+1);string+=String.fromCharCode(((c&31)<<6)|(c2&63));i+=2}else{c2=utftext.charCodeAt(i+1);c3=utftext.charCodeAt(i+2);string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));i+=3}}}return string}};return{Base64:Base64}})();
+    function DigitRoll(a){if(this.container=document.querySelector(a.container),this.width=a.width||1,!this.container)throw Error("no container");this.container.style.overflow="hidden",this.rollHeight=parseInt(getComputedStyle(this.container).height),this.rollHeight<1&&(this.container.style.height="20px",this.rollHeight=20),this.setWidth()}DigitRoll.prototype={roll:function(a){var b=this;this.number=parseInt(a)+"",this.number.length<this.width?this.number=new Array(this.width-this.number.length+1).join("0")+this.number:this.number.length>=this.width&&(this.width=this.number.length,this.setWidth()),Array.prototype.forEach.call(this.container.querySelectorAll(".num"),function(a,c){var h,d=parseInt(a.querySelector("div:last-child").innerHTML),e=parseInt(b.number[c]),f=0,g="";if(d!=e){if(e>d)for(f=e-d,h=d;e+1>h;h++)g+="<div>"+h+"</div>";else{for(f=10-d+e,h=d;10>h;h++)g+="<div>"+h+"</div>";for(h=0;e+1>h;h++)g+="<div>"+h+"</div>"}a.style.cssText+="-webkit-transition-duration:0s;-webkit-transform:translateY(0)",a.innerHTML=g,setTimeout(function(){a.style.cssText+="-webkit-transition-duration:1s;-webkit-transform:translateY(-"+b.rollHeight*f+"px)"},50)}})},setWidth:function(a){var b,c;for(a=a||this.width,b="",c=0;a>c;c++)b+='<div class="num" style="float:left;height:100%;line-height:'+this.rollHeight+'px"><div>0</div></div>';this.container.innerHTML=b}};
+    DigitRoll.prototype.setWidth=function(n){n=n||this.width;var str='';for(var i=0;i<n;i++){for(var i=0;i<n;i++){str+='<div class="number_item"><div class="num" style="float:left;width:100%;height:100%;line-height:'+this.rollHeight+'px"><div>0</div></div></div>'}}this.container.innerHTML=str};
+    var $micro_tmpl=(function(){var cache={},toHTML=function(str){return str.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&nbsp;/g," ").replace(/&#39;/g,"'")};var micro_tmpl=function tmpl(str,data){var str=toHTML(document.getElementById(str).innerHTML);var data=data||{};var fn=!/\W/.test(str)?cache[str]=cache[str]||tmpl(document.getElementById(str).innerHTML):new Function("obj","var p=[],print=function(){p.push.apply(p,arguments);};"+"with(obj){p.push('"+str.replace(/[\r\t\n]/g," ").split("{%").join("\t").replace(/((^|%})[^\t]*)'/g,"$1\r").replace(/\t=(.*?)%}/g,"',$1,'").split("\t").join("');").split("%}").join("p.push('").split("\r").join("\\'")+"');}return p.join('');");return data?fn(data):fn};return micro_tmpl})();
+    function yybCheckInstall(callback){callback=callback||function(){};var appStr="com.tencent.qqmusic";JsBridge.getAppInstalledVersion([appStr],function(res){var installed=res&&!!res[appStr];callback(installed)})};function yybDownload(){new JsBridge.Download({packageName:"com.tencent.qqmusic",hnAppId:"6259",checkUpdate:true},function(state,percentage,context,args){switch(state){case JsBridge.Download.STATE_READY:M.tips("下载中");break;case JsBridge.Download.STATE_UPDATE:M.tips("更新下载");break;case JsBridge.Download.STATE_QUEUING:M.tips("等待中");break;case JsBridge.Download.STATE_DOWNLOADING:M.tips("暂停下载");break;case JsBridge.Download.STATE_PAUSED:if(args.uiType&&args.uiType==JsBridge.Download.UITYPE_WISE_NO_WIFI_BOOKING_DOWNLOAD){M.tips("等WiFi")}else{M.tips("继续下载")}break;case JsBridge.Download.STATE_DOWNLOADED:M.tips("等待安装");break;case JsBridge.Download.STATE_INSTALLING:M.tips("安装中");break;case JsBridge.Download.STATE_INSTALLED:M.tips("打开app");break;default:M.tips("下载出错")}}).doAction()};function fnum(n){return n>0?(n>100000?parseInt(n/10000)+"万":n):0};function encodeHTML(str){return str==null?"":M.encodeHTML(""+str).replace(/&#10;/g,"<br/>")};
+    function getPV(type){$.ajax({url:"//c.y.qq.com/share/fcgi-bin/vote/fcg_add_pv_vote.fcg",data:{uin:M.user.getUin(),no:613,id:"1",type:type||1,format:"jsonp"},dataType:"jsonp",reportCode:false,success:function(r){if(r.code==0){oCount.roll(parseInt(r.count))}},complete:function(){setTimeout(function(){getPV(1)},60000)}})};
+    function tj(aid){aid&&M.tj.sendClick(pagename+"."+aid+'.'+browser)};function hackOpen(scheme){if($.os.ios){var start=(+new Date());location.href=scheme}else{var i=document.createElement("iframe");i.style.width="1px";i.style.height="1px";i.style.display="none";i.src=scheme;var start=(+new Date());document.body.appendChild(i)}};
+    function showInstallDlg(notshow,cb){if(notshow===true||$.browser.music||g_data.install){cb&&cb(true)}else{$(".js_popup_download").show();tj("popup_download");g_data.cb_popup=cb}};function showPlaysongDlg(notshow,cb){if(notshow===true||$.browser.music||g_data.install){cb&&cb(true)}else{$(".js_popup_playsong").show();tj("popup_playsong");g_data.cb_popup=cb}};function showInstallDlgHot(cb){if($.browser.music||g_data.install){cb&&cb(true)}else{$(".js_popup_download_hot").show();tj("popup_download_hot");g_data.cb_popup=cb}};
+    function showDlg(dlg){window.scollTop=$('body').scrollTop();$('#js_warp').hide();$('body').scrollTop(0);$('.js_dlg[data-dlg="'+dlg+'"]').show()};function hideDlg(){$('#js_warp').show();$('.js_dlg').hide();window.scollTop>=0&&$('body').scrollTop(window.scollTop);window.scollTop=-1};function loadSongInfo(){setTimeout(function(){var list=[];$(".js_playsong").each(function(){var id=this.getAttribute("data-id");if(id>0){list.push(id)}});M.player.getSongInfo(list)},0)};
+    function hideMore(){var yue=$('.js_yue-content');for(var i=0;i<yue.length;i++){if(yue.eq(i).height()<=yue.eq(i).parent().height()){yue.eq(i).parent().siblings('.comment_list_more ').remove()}}var re=$('.js_reply_body');for(var i=0;i<re.length;i++){if(re.eq(i).height()<=re.eq(i).parent().height()){re.eq(i).parent().siblings('.comment_list_more ').remove()}}};
+    function lazyload(o){$(o||'img[data-src]').on('error',function(e){this.removeAttribute('data-src');e.preventDefault()}).on('loadcomplete',function(){this.removeAttribute('data-src')}).imglazyload({urlName:'data-src',threshold:200}).imglazyload.detect()};
+    function checkAppInstall(cb){if(typeof g_data.install!=='undefined'){cb&&cb(g_data.install);return g_data.install}function __yybCheck(){yybCheckInstall(function(installed){g_data.install=installed;cb&&cb(g_data.install)})}if(isYYB){if(typeof JsBridge==='undefined'){M.loadUrl(window.location.protocol+"//qzs.qq.com/open/yyb/common/js/jsbridge.js?_ck_bid=2",function(){__yybCheck()})}else{__yybCheck()}}else{M.checkInstall(function(data){g_data.install=(data==1);cb&&cb(g_data.install)})}}function checkMusicNov(){M.ready(function(){M.checkInstall(function(status){if(status==1){var href=location.href;M.openMusic({mid:($.os.ios?12:13),k2:encodeURIComponent(href)},g_data.channel)}else{$('.js_popup_playsong').show()}})})}var sliderCover=function(){$('#cover').get(0).style.cssText+='-webkit-transform:translate3d(0,-100%,0);-webkit-transition-duration:800ms'};
+</script>
+<script>
+    var pagename = "maskessinger2";// 页面名
+    var browser = 'other';// 统计用
+
+    // 因为schedule不需要所有字段，所以只输出需要的字段
+    var schedule = {
+                Fvote_no: 630,
+            Falbum_id: 2225081
+    };
+
+    
+    schedule.songs = [{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137198.png","Fsinger_name":"张智霖","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"算你狠","Ftrack_id":203763081,"Ftrack_mid":"002uzE1b4ayu2y"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137335.png","Fsinger_name":"我们白着呢","Fsinger_name2":"李荣浩","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"龙卷风","Ftrack_id":203763080,"Ftrack_mid":"001HfHOk0VY6KQ"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137197.png","Fsinger_name":"李荣浩","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"如果有一天","Ftrack_id":203763079,"Ftrack_mid":"003A7PaI1PVdFv"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137122.png","Fsinger_name":"闲不住的铁娘子","Fsinger_name2":"没朋友的球鞋侠","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"屋顶","Ftrack_id":203763076,"Ftrack_mid":"000WkbEJ2FVvfd"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137120.png","Fsinger_name":"闲不住的铁娘子","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"眼泪","Ftrack_id":203763078,"Ftrack_mid":"000EHCiA1fTyWl"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137123.png","Fsinger_name":"宝宝翻身把歌唱","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"你就不要想起我","Ftrack_id":203763075,"Ftrack_mid":"004MjsaN1Axmqh"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137199.png","Fsinger_name":"成方圆","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"我的心里只有你没有他","Ftrack_id":203763082,"Ftrack_mid":"002N22tO3ucX7F"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137121.png","Fsinger_name":"没朋友的球鞋侠","Fsinger_name2":"","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"小幸运","Ftrack_id":203763077,"Ftrack_mid":"004AnjYr0uRPGk"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songShow_songs/137336.png","Fsinger_name":"宝宝翻身把歌唱","Fsinger_name2":"成方圆","Fsinger_name3":"","Fsinger_name4":"","Ftrack_name":"夜夜夜夜","Ftrack_id":203763083,"Ftrack_mid":"000afJqF0H7XhH"}];
+
+    // 排行榜
+    
+    var hotSongs = [{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137202.jpg","Ftrack_name":"算你狠","Ftrack_id":203763081,"Ftrack_mid":"002uzE1b4ayu2y","Fsinger_name":"张智霖"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137337.jpg","Ftrack_name":"龙卷风","Ftrack_id":203763080,"Ftrack_mid":"001HfHOk0VY6KQ","Fsinger_name":"我们白着呢","Fsinger_name2":"李荣浩"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137200.jpg","Ftrack_name":"如果有一天","Ftrack_id":203763079,"Ftrack_mid":"003A7PaI1PVdFv","Fsinger_name":"李荣浩"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137131.jpg","Ftrack_name":"屋顶","Ftrack_id":203763076,"Ftrack_mid":"000WkbEJ2FVvfd","Fsinger_name":"闲不住的铁娘子","Fsinger_name2":"没朋友的球鞋侠"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137129.jpg","Ftrack_name":"眼泪","Ftrack_id":203763078,"Ftrack_mid":"000EHCiA1fTyWl","Fsinger_name":"闲不住的铁娘子"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137338.jpg","Ftrack_name":"夜夜夜夜","Ftrack_id":203763083,"Ftrack_mid":"000afJqF0H7XhH","Fsinger_name":"宝宝翻身把歌唱","Fsinger_name2":"成方圆"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137132.jpg","Ftrack_name":"你就不要想起我","Ftrack_id":203763075,"Ftrack_mid":"004MjsaN1Axmqh","Fsinger_name":"宝宝翻身把歌唱"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137201.jpg","Ftrack_name":"我的心里只有你没有他","Ftrack_id":203763082,"Ftrack_mid":"002N22tO3ucX7F","Fsinger_name":"成方圆"},{"Fh5_photo_url":"https://y.gtimg.cn/music/common/upload/t_tv_songHot_song/137130.jpg","Ftrack_name":"小幸运","Ftrack_id":203763077,"Ftrack_mid":"004AnjYr0uRPGk","Fsinger_name":"没朋友的球鞋侠"}];// 累计人气歌曲列表
+
+    var hotSongIds = [203763081,203763080,203763079,203763076,203763078,203763083,203763075,203763082,203763077];// 所有人气歌曲ID
+    var g_data = {
+                songMenu: '1777801444,2038560543,2643012962,1472569038,2935317436',
+                cur_schedule: 249
+    };
+
+    // 其他配置
+    var config = {
+                useoutTip: '票数已用完！快去QQ音乐播放器听本节目歌曲赚取票，再来投票吧~',
+                Fshare_img: 'https://y.gtimg.cn/music/common/upload/t_tv_songShow/134803.jpg',
+                Fshare_title: '听歌猜人！蒙面唱将重现江湖！',
+                Fshare_desc: '只听歌声，这波歌手你能猜对几个？！',
+                Ftop_head_img_no: M.fixUrl('https://y.gtimg.cn/music/common/upload/t_tv_songShow/136801.jpg'),
+                pvNo: 613,
+            channel: ''
+    };
+</script>
+<script type="text/javascript">config.channel=M.getParam("channel")||config.channel;var isYYB=/\/qqdownloader\/(\d+)(?:\/(appdetail|external|sdk))?/i.test(navigator.userAgent),platform=$.browser.ie?"wp":$.os.ios?"ios":"android",shareSongLink="https://i.y.qq.com/v8/playsong.html?songid=",showed=!1,oCount,shareData={};window.g_currentTime=Date.now();var head=function(){function t(t){M.ajax({type:"get",url:location.protocol+"//c.y.qq.com/share/fcgi-bin/vote/fcg_add_pv_vote.fcg",data:{no:n,type:t,id:1},dataType:"json",success:function(t){"string"==typeof t&&(t=JSON.parse(t)),t&&0==t.code&&$("#js_person_num").html(t.count)},error:function(){}})}var n=config.pvNo;return{init:function(){t(2)},getFriendInfo:function(t){for(var n=schedule.songs||[],a=[],i={},s=0;s<n.length;s++)r=n[s],a.push(r.Ftrack_id),i[r.Ftrack_id]=r.Ftrack_name;for(var e=0;e<hotSongs.length;e++){var r=hotSongs[e];a.push(r.Ftrack_id),i[r.Ftrack_id]=r.Ftrack_name}var o="";M.ajax({type:"get",url:location.protocol+"//c.y.qq.com/share/fcgi-bin/vote/fcg_friend_listen_xgs.fcg",data:{ids:a.join()},dataType:"json",success:function(n){if("string"==typeof n&&(n=JSON.parse(n)),n&&0==n.code&&n.data&&n.data.listen_list&&n.data.listen_list.length)for(var a=n.data.listen_list,s=0,e=a.length;s<5&&s<e;s++){var r=a[s],l=i[r.songid]||"",c=r.nickname||"";l&&c&&(o+='<li class="listening_list__item">好友 <em>'+r.nickname+"</em> 听了《"+l+"》</li>")}else o='<li class="listening_list__item">大家都在听'+t+"</li>"},error:function(){o='<li class="listening_list__item">大家都在听'+t+"</li>"},complete:function(){$("#js_friend_info").html(o);var t=$("#js_friend_info").width(),n=$("#js_friend_wrap").width(),a=1,i=n+10,s=function(){a>=3&&i<-t-20||(i<-t-20&&(i=n+10,a++),$("#js_friend_info").css({"-webkit-transform":"translateX("+i+"px)",transform:"translateX("+i+"px)"}),i-=1,setTimeout(s,20))};setTimeout(s,20)}})}}}(),toplist=function(){function t(t){for(i=0;i<l.length;i++){var n=l[i];l[i].voteNum=c[n.Ftrack_id]||0}if(l.sort(function(t,n){return parseInt(n.voteNum)-parseInt(t.voteNum)}),$("#js_curtoplist").html(p(l)),t&&t(),!head.friendInfoInited){for(var a=[],i=0;i<3;i++)l[i]&&l[i].Ftrack_name&&a.push("《"+l[i].Ftrack_name+"》");head.getFriendInfo(a.join("")),head.friendInfoInited=!0}}function n(){for(var t=0;t<hotSongs.length;t++){var n=hotSongs[t];hotSongs[t].voteNum=c[n.Ftrack_id]||0}hotSongs.sort(function(t,n){return parseInt(c[n.Ftrack_id]||0)-parseInt(c[t.Ftrack_id]||0)}),$("#js_top3list").html(g(hotSongs.slice(0,3))),$("#js_totaltoplist").html(u(hotSongs))}function a(t,n){M.ajax({type:"get",url:location.protocol+"//c.y.qq.com/share/fcgi-bin/vote/fcg_get_votes_yxh.fcg",data:{no:o,idlist:t,type:2,format:"json"},dataType:"json",success:function(t){if(0==t.code&&t.result){for(var a in t.result)c[a]=t.result[a];n&&n(),M.user.isLogin()&&($("#js_remain_ticket").html(t.usrlimit||0),t.usrlimit<1&&$(".js_vote,.js_vote_expand").html("送礼").attr("data-novote",1))}else M.alert("服务器繁忙，请稍候重试")},error:function(){M.alert("网络繁忙，请稍候重试")}})}function i(t,n){M.user.isLogin()?M.ajax({type:"get",url:location.protocol+"//c.y.qq.com/share/fcgi-bin/vote/fcg_add_vote_yxh.fcg",data:{no:o,id:t,num:n,idlist:t,type:2,format:"json"},dataType:"json",success:function(t){if(2!=t.code)if(0==t.code&&t.result){M.alert("投票成功");for(var n in t.result)c[n]=t.result[n];e(),$("#js_remain_ticket").html(t.usrlimit||0),t.usrlimit<1&&$(".js_vote,.js_vote_expand").html("送礼").attr("data-novote",1)}else 4==t.code?M.alert(config.useoutTip):M.alert("服务器繁忙，请稍候重试");else M.user.login(function(){location.reload()})},error:function(){M.alert("网络繁忙，请稍候重试")}}):M.user.login(function(){location.reload()})}function s(){$(document).on("tap",".js_vote",function(t){var n=$(this);if(1==n.attr("data-novote"))return checkAppInstall(function(){showInstallDlgHot(function(t){if($.browser.music)M.client.open("ui","hideMiniPlayer",{}),M.client.invoke("other","sendGift",{mid:n.attr("data-mid")},function(t){t&&0==t.code&&toplist.getVoteNum(),M.client.open("ui","showMiniPlayer",{})});else{var a=M.addParam("sendgift=1&sendmid="+n.attr("data-mid"));M.client.open("ui","openUrl",{url:a.replace("#wechat_redirect","")},function(){},config.channel)}})}),void tj("sendgift");{if(M.user.isLogin()){var a=$(this).data("id"),i=$(this).data("name");return $("#js_vote_panel").show(),$("#js_support_song").html(i),$("#js_submit_vote").attr("data-id",a),tj("vote."+a),!1}M.user.login(function(){location.reload()})}}).on("tap",".js_plus",function(){var t=+$("#js_vote_num_input").val(),n=+$("#js_remain_ticket").html();t<n&&$("#js_vote_num_input").val(t+1),t>=n?$(this).addClass("support_act_btn--disable"):$(this).removeClass("support_act_btn--disable")}).on("tap",".js_minus",function(){var t=+$("#js_vote_num_input").val();t>0&&$("#js_vote_num_input").val(t-1),t<=1?$(this).addClass("support_act_btn--disable"):$(this).removeClass("support_act_btn--disable")}).on("tap","#js_submit_vote",function(){var t=$(this).data("id"),n=+$("#js_remain_ticket").html(),a=+$("#js_vote_num_input").val();a>0&&a<=n?(i(t,a),$("#js_vote_panel").hide()):M.alert("票数错误，请重新输入")})}function e(){t(),n()}function r(i){a(d.join(),function(){t(i),n()})}var o=schedule.Fvote_no,l=schedule.songs||[],c={},d=[],u=function(t){for(var n,a="",i=_.escape,s=(Array.prototype.join,0);s<t.length;s++){var e=t[s],r=e.Fsinger_name;e.Fsinger_name2&&(r+=" / "+e.Fsinger_name2),e.Fsinger_name3&&(r+=" / "+e.Fsinger_name3),e.Fsinger_name4&&(r+=" / "+e.Fsinger_name4),a+='\r\n<li class="hit_list__item">\r\n    <span class="hit_list__index c_txt3">'+(null==(n=s+1)?"":n)+'</span>\r\n    <a class="hit_list__avatar">\r\n        <img src="'+(null==(n=M.fixUrl(e.Fh5_photo_url))?"":n)+'" onerror="this.src=\'//y.gtimg.cn/mediastyle/music_v12/img/default_album.png?max_age=2592000\';this.onerror=null" class="hit_list__avatar_img" alt="'+(null==(n=e.singername)?"":n)+'">\r\n        <i class="qui_equal_col__play js_playsong" title="播放" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'"></i>\r\n    </a>\r\n    <div class="hit_list__bd c_bor1">\r\n        <div class="hit_list__info">\r\n            <div class="hit_list__txt">\r\n                <h3 class="hit_list__tit c_txt1">'+i(e.Ftrack_name)+'</h3>\r\n                <p class="hit_list__desc c_txt1">'+i(r)+'</p>\r\n            </div>\r\n            <div class="hit_list__other">\r\n                <a class="hit_list__btn c_txt1 js_vote" href="javascript:;" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'" data-mid="'+(null==(n=e.Ftrack_mid)?"":n)+'" data-name="'+(null==(n=e.Ftrack_name)?"":n)+'">投票</a>\r\n                <span class="hit_list__count c_txt1">'+(null==(n=e.voteNum)?"":n)+"票</span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n"}return a+="\r\n\r\n\r\n"},p=function(t){for(var n,a="",i=_.escape,s=(Array.prototype.join,0);s<t.length;s++){var e=t[s],r=e.Fsinger_name;e.Fsinger_name2&&(r+=" / "+e.Fsinger_name2),e.Fsinger_name3&&(r+=" / "+e.Fsinger_name3),e.Fsinger_name4&&(r+=" / "+e.Fsinger_name4),a+='\r\n<li class="hit_list__item c_bor1 js_song">\r\n    <span class="hit_list__index c_txt3">'+(null==(n=s+1)?"":n)+'</span>\r\n    <a class="hit_list__avatar">\r\n        <img src="'+(null==(n=M.fixUrl(e.Fh5_photo_url))?"":n)+'" class="hit_list__avatar_img" alt="">\r\n    </a>\r\n    <div class="hit_list__bd">\r\n        <div class="hit_list__info">\r\n            <div class="hit_list__txt">\r\n                <h3 class="hit_list__tit c_txt1">'+i(e.Ftrack_name)+'</h3>\r\n                <p class="hit_list__desc c_txt1">'+i(r)+'</p>\r\n            </div>\r\n            <div class="hit_list__other">\r\n                <a href="javascript:;" class="js_vote hit_list__btn c_txt1" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'" data-name="'+(null==(n=e.Ftrack_name)?"":n)+'" data-mid="'+(null==(n=e.Ftrack_mid)?"":n)+'">投票</a>\r\n                <span class="hit_list__count c_txt1 js_vote_num" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'">'+(null==(n=e.voteNum)?"":n)+'票</span>\r\n            </div>\r\n        </div>\r\n        <div class="hit_list__control">\r\n            <a href="javascript:;" class="hit_list__control_item c_txt1 js_playsong" title="播放" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'">\r\n                <svg class="icon_svg c_txt1 icon_play_r">\r\n                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use>\r\n                </svg>\r\n            </a>\r\n            ',e.Fvid&&(a+='\r\n            <a href="javascript:;" class="hit_list__control_item c_txt1 js_playmv" title="MV" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'" data-vid="'+(null==(n=e.Fvid)?"":n)+'" data-title="'+i(e.Ftrack_name)+'" data-singer="'+i(e.Fsinger_name)+'">\r\n                <svg class="icon_svg c_txt1">\r\n                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mv"></use>\r\n                </svg>\r\n            </a>\r\n            '),a+='\r\n            <a href="javascript:;" class="hit_list__control_item c_txt1 js_downsong" title="下载" data-id="'+(null==(n=e.Ftrack_id)?"":n)+'">\r\n                <svg class="icon_svg c_txt1">\r\n                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>\r\n                </svg>\r\n            </a>\r\n            <a href="javascript:;" class="hit_list__control_item c_txt1 js_share" title="分享" data-title="'+i(e.Ftrack_name)+"-"+i(e.Fsinger_name)+'" data-songid="'+(null==(n=e.Ftrack_id)?"":n)+'" data-desc="'+i(e.Ftrack_name)+'">\r\n                <svg class="icon_svg c_txt1">\r\n                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>\r\n                </svg>\r\n            </a>\r\n        </div>\r\n    </div>\r\n</li>\r\n'}return a},g=function(t){var n="",a=_.escape,i=(Array.prototype.join,t[0]);if(i){r=i.Fsinger_name;i.Fsinger_name2&&(r+=" / "+i.Fsinger_name2),i.Fsinger_name3&&(r+=" / "+i.Fsinger_name3),i.Fsinger_name4&&(r+=" / "+i.Fsinger_name4),n+='\r\n<li class="rank_list__item">\r\n    <div class="rank_list__box">\r\n        <span class="rank_list__bg c_bg2"></span>\r\n        <span class="rank_list__index c_txt1">1</span>\r\n        <span class="rank_list__avatar"><img src="'+a(i.Fh5_photo_url)+'" class="rank_list__avatar_img"></span>\r\n        <div class="rank_list__bd">\r\n            <p class="rank_list__txt c_txt1">'+a(i.Ftrack_name)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(r)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(i.voteNum>1e4?parseInt(i.voteNum/1e4)+"万":i.voteNum)+"票</p>\r\n        </div>\r\n    </div>\r\n</li>\r\n"}n+="\r\n";var s=t[1];if(s){r=s.Fsinger_name;s.Fsinger_name2&&(r+=" / "+s.Fsinger_name2),s.Fsinger_name3&&(r+=" / "+s.Fsinger_name3),s.Fsinger_name4&&(r+=" / "+s.Fsinger_name4),n+='\r\n<li class="rank_list__item">\r\n    <div class="rank_list__box">\r\n        <span class="rank_list__bg c_bg2"></span>\r\n        <span class="rank_list__index c_txt1">2</span>\r\n        <span class="rank_list__avatar"><img src="'+a(s.Fh5_photo_url)+'" class="rank_list__avatar_img"></span>\r\n        <div class="rank_list__bd">\r\n            <p class="rank_list__txt c_txt1">'+a(s.Ftrack_name)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(r)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(s.voteNum>1e4?parseInt(s.voteNum/1e4)+"万":s.voteNum)+"票</p>\r\n        </div>\r\n    </div>\r\n</li>\r\n"}n+="\r\n\r\n";var e=t[2];if(e){var r=e.Fsinger_name;e.Fsinger_name2&&(r+=" / "+e.Fsinger_name2),e.Fsinger_name3&&(r+=" / "+e.Fsinger_name3),e.Fsinger_name4&&(r+=" / "+e.Fsinger_name4),n+='\r\n<li class="rank_list__item">\r\n    <div class="rank_list__box">\r\n        <span class="rank_list__bg c_bg2"></span>\r\n        <span class="rank_list__index c_txt1">3</span>\r\n        <span class="rank_list__avatar"><img src="'+a(e.Fh5_photo_url)+'" class="rank_list__avatar_img"></span>\r\n        <div class="rank_list__bd">\r\n            <p class="rank_list__txt c_txt1">'+a(e.Ftrack_name)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(r)+'</p>\r\n            <p class="rank_list__desc c_txt1">'+a(e.voteNum>1e4?parseInt(e.voteNum/1e4)+"万":e.voteNum)+"票</p>\r\n        </div>\r\n    </div>\r\n</li>\r\n"}return n};return{init:function(t){if(o){for(var n=0;n<l.length;n++){var a=l[n];c[a.Ftrack_id]=0}for(n=0;n<hotSongIds.length;n++)c[hotSongIds[n]]=0;for(var i in c)d.push(i);s(),r(t)}else alert("缺少期号")},updateVoteNum:e,getVoteNum:r,showSchedule:function(n,i){if(n){o=n,l=i;for(var s=[],e=0;e<i.length;e++){var r=i[e];s.push(r.Ftrack_id)}a(s.join(),function(){t()})}else alert("缺少期号")}}}(),splash=function(){return{init:function(){"qqmusic"!=browser&&!g_data.install&&$("#js_popup_splash").length&&($("#js_popup_splash").show(),$("#js_splash").on("tap",function(){var t=$(this).data("url");t&&(location.href=t)}))}}}(),topic=function(){return{init:function(){$("#js_alltopiclist").html($("#js_topiclist").html()).find(".js_topic_click").show(),$("#js_alltopiclist img").forEach(function(t){t.src=t.getAttribute("data-src")})}}}(),musicPlay=function(){return{playSong:function(t,n){var a=[],i=[],s={};$(n).each(function(){var n=this.getAttribute("data-id");n>0&&(n==t&&-1==a.indexOf(n)?a.push(n):n!=t&&-1==i.indexOf(n)&&i.push(n))}),a=a.concat(i),s.songId=a,t?(checkAppInstall(function(){showPlaysongDlg(showed&&!!t,function(){showed=!0,t||!g_data.install||$.browser.music||(s.target="music")})}),M.player.play(s)):$.browser.music?(s.target="music",M.player.play(s)):M.ready(function(){M.checkInstall(function(t){if(1==t){var n=M.addParam("playAllOnInit=1");M.client.open("ui","openUrl",{url:n},function(){},config.channel)}else $(".js_popup_playsong").show()})}),$(".js_playList").removeClass("pause"),M.player.disstid=0},initPlaySong:function(){window.updatePlayBtn=function(){var t=M.player.getStatus().songId,n=$(".icon_play_r",'.js_playsong[data-id="'+this.songId+'"]');$(".js_playsong").find(".icon_play_r").not(n).find("use").attr("xlink:href","#play"),$(".js_playsong").removeClass("pause").find("use").attr("xlink:href","#play"),$('.js_playsong[data-id="'+t+'"]').addClass("pause").find(".icon_play_r").find("use").attr("xlink:href","#pause"),n.find("use").attr("xlink:href","#pause")},M.player.on("play pause ended",function(){if("playing"==this.state&&(this.songId||this.songUrl)){var t=$(".icon_play_r",'.js_playsong[data-id="'+this.songId+'"]');$(".js_playsong").find(".icon_play_r").not(t).find("use").attr("xlink:href","#play"),$(".js_playsong").removeClass("pause").find("use").attr("xlink:href","#play"),$('.js_playsong[data-id="'+this.songId+'"]').addClass("pause").find(".icon_play_r").find("use").attr("xlink:href","#pause"),t.find("use").attr("xlink:href","#pause")}else $(".icon_play_r",".js_playsong").find("use").attr("xlink:href","#play"),$(".js_playsong").removeClass("pause")}),window.pauseSong=function(t,n){M.player.pause()}},downSong:function(t){var n=t>0?t:$(t).data("id");M.player.pause(),$.browser.music?M.compare($.browser.appVer,"7.3")>=0?M.player.getSongInfo(n,function(t,a){!t&&a[n]&&M.client.open("media","downloadSong",{silence:"1",song:[a[n]]},function(t){t&&2==t.code&&M.alert("抱歉，无权限下载此歌曲")})}):setTimeout(function(){M.player.download(n+"")},50):M.client.open("ui","openUrl",{url:location.href},function(){},config.channel)},downAllSong:function(t,n){var a=t>0?t:$(t).attr("data-id");if(tj(n?"downsong.all":"song.all"),0==a)return M.alert("感谢支持中国之星全网独家音频！全新一期即将更新，敬请关注！"),!1;M.openMusic({mid:6,k1:a,k2:window.location.protocol+"//y.qq.com/v3/static/album/"+parseInt(a%100)+"/album_"+parseInt(a)+"_0.json.z",k3:"5LiT6L6R",k4:10002},config.channel)},playMv:function(t,n,a){"object"==typeof t&&(n=(t=$(t)).attr("data-title"),a=t.attr("data-singer"),t=t.attr("data-vid")),tj("openmv."+t),$.browser.music?M.openMusic({mid:19,k2:t,k3:g_coder.Base64.encode(n||""),k7:g_coder.Base64.encode(a||"")},config.channel):setTimeout(function(){location.href=window.location.protocol+"//y.qq.com/w/mv.html?vid="+t},50)}}}(),Page=function(){function t(){$(window).height();$(document).on("tap",".js_showrule",function(){$("#js_popup_rule").show()}).on("tap",".js_share",function(t){var n=$(this),a={title:n.data("title"),link:shareSongLink+n.data("songid"),desc:n.data("desc")};M.share.onshare=function(){M.share&&M.share.init(window.shareinfo)},M.share&&M.share.init(a),tj("sharesong."+n.data("songid")),$.browser.music?M.ready(function(){M.share&&M.share.call(a)}):checkMusicNov()}).on("tap",".js_popup_share",function(){M.share&&M.share.init(shareData),$.browser.music?M.ready(function(){M.share&&M.share.call(shareData)}):(checkMusicNov(),$(".js_popup_voted").hide())}).on("tap",".js_playsong",function(t){var n=this.getAttribute("data-id");"#play"==$(t.target).find("use").attr("xlink:href")&&tj("play."+n),musicPlay.playSong(n,this)}).on("tap",".js_playallsong",function(){tj("Allplay"),musicPlay.playSong("",$("#js_curtoplist .js_playsong"))}).on("tap",".js_downsong",function(t){var n=this,a=$(this).data("id");tj("downsong."+a),checkAppInstall(function(){showInstallDlg(null,function(t){t&&musicPlay.downSong(n)})})}).on("tap",".js_dlg_show",function(){var t=$(this),n=t.attr("data-tj"),a=t.attr("data-dlg");a&&(tj(n),$('.js_dlg[data-dlg="'+a+'"]').addClass("popup_history--show")),$.browser.music||checkMusicNov()}).on("tap",".js_dlg_close",function(){$(this).parents(".js_dlg").removeClass("popup_history--show")}).on("tap",".js_moreGedan",function(){if($(".js_playList").hasClass("pause")){var t=$(".pause").attr("songid");$('.js_playList[songid="'+t+'"]').addClass("pause")}}).on("tap",".js_gedan_close",function(){if($(".js_playList").hasClass("pause")){var t=$(".pause").attr("songid");$('.js_playList[songid="'+t+'"]').addClass("pause")}}).on("tap",".js_yueping",function(){yueping.showYuepingDetail(this)}).on("tap",".js_moreYueping",function(){yueping.getMoreYueping()}).on("tap",".js_topic_click",function(){var t=$(this).data("href");tj("topicclick."+$(this).data("id")),t&&setTimeout(function(){$.browser.music?M.client.open("ui","openUrl",{url:t},function(){}):location.href=M.fixUrl(t)},10)}).on("tap",".js_banner_click",function(){tj("bannerclick."+$(this).data("id"))}).on("tap",".js_bar",function(){checkMusicNov(),tj("bar")}).on("tap",".js_hide_popup",function(){$(".js_popup").hide(),g_data.cb_popup&&(g_data.cb_popup(),delete g_data.cb_popup)}).on("tap",".js_openwx",function(){hackOpen("weixin://qq.com"),tj("openwx")}).on("tap",".js_install",function(){isYYB?yybDownload():M.openMusic({mid:$.os.ios?12:13,k2:encodeURIComponent(location.href)},config.channel),tj("install.dlg")}).on("tap","#cover",function(){var t=$(this);"1"==t.attr("data-type")&&""!=t.attr("data-link")&&(tj("cover_link"),setTimeout(function(){location.href=t.attr("data-link")},50))}).on("tap",".js_ad_link",function(){var t=$(this).data("link");t&&(tj("goadlink"),$.browser.music?M.client.open("ui","openUrl",{url:t}):setTimeout(function(){location.href=t},100))}).on("tap",".js_song",function(t){var n=$(t.target),a=n.attr("xlink:href")||n.find("use").attr("xlink:href");n.hasClass("js_vote")||"#play"==a||"#pause"==a||"#share"==a||"#download"==a||$(this).find(".js_playsong").trigger("tap")})}function n(){songMenu.init(),reping({type:2,topid:schedule.Falbum_id,pagenum:0,pagesize:10,obj:".js_cmt",input:".js_cmt_input",msg_more:"点击加载更多",msg_end:"以上评论由QQ音乐筛选后显示",msg_loading:"加载中，请稍后...",msg_empty:"还没有人评论，来抢沙发吧！"}).init(),calendarHelper.init(),$(".js_banner img").forEach(function(t){t.src=t.getAttribute("data-src")}),$(".js_exclusive img").forEach(function(t){t.src=t.getAttribute("data-src")}),$(".js_exclusive_list img").forEach(function(t){t.src=t.getAttribute("data-src")}),$(".js_exclusive_dlg img").forEach(function(t){t.src=t.getAttribute("data-src")})}return{init:function(){$.browser.music?browser="qqmusic":$.browser.weixin?browser="weixin":$.browser.mqq&&(browser="mqq"),head.init(),toplist.init(function(){1==M.getParam("playAllOnInit")&&$(".js_playallsong").trigger("tap"),1==M.getParam("sendgift")&&M.getParam("sendmid")&&M.musicReady(function(){return M.user.isLogin()?M.client.on?(M.client.open("ui","hideMiniPlayer",{}),M.client.invoke("other","sendGift",{mid:M.getParam("sendmid")},function(t){t&&0==t.code&&toplist.getVoteNum(),M.client.open("ui","showMiniPlayer",{})}),void tj("sendgift.open")):(tj("sendgift.download"),M.confirm({message:"请升级到最新版本后操作。",btn:["立即升级","取消"],cb:function(t){0==t&&M.download()}})):M.user.login(function(t){t&&location.reload()})})}),musicPlay.initPlaySong(),topic.init(),t(),window.shareinfo={img:config.Fshare_img,link:window.location.protocol+"//y.qq.com/m/act/"+pagename+"/index.html?_wv=1&ADTAG=share#wechat_redirect",title:config.Fshare_title,desc:config.Fshare_desc},M.share.init(window.shareinfo),$.cookie.set("qqmusic_fromtag",10,"qq.com"),$(window).on("getinstallflag",function(){var t=$("#cover"),n=!1;t.length>0&&(0==t.attr("data-show")?n=0!=t.attr("data-type")||!g_data.install&&!$.browser.music:1==t.attr("data-show")&&(n=!($.browser.music||0==t.attr("data-type")&&g_data.install)),n&&($("#cover").show(),tj("cover.show"))),$("#js_warp").show(),$.browser.mqq&&g_data.install&&setTimeout(function(){M.openMusic({mid:$.os.ios?12:13,k2:encodeURIComponent(location.href)},config.channel)},150)}),checkAppInstall(function(t){g_data.install=t,t||splash.init(),setTimeout(function(){$(window).trigger("getinstallflag")},50)}),M.loadUrl(window.location.protocol+"//y.gtimg.cn/music/activity/singchina/index_v3.js?ver=20170721&max_age=2592000",function(){window.reping&&n()},null,!0)}}}();Page.init(),$(function(){$.os.ios&&parseFloat($.os.version)>10&&function(){var t=document.createElement("style");t.innerHTML=".fk{display:none}",document.head.appendChild(t),document.head.removeChild(t),t=null}()});</script>
+</body>
+</html><!--|mm|137363|--><!--[if !IE]>|xGv00|85b8705debff07443c7eca3d10b1c59b<![endif]-->

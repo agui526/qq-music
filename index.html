@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="" href="styles/app.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>QQ 音乐</title>
 </head>
 
@@ -19,28 +20,63 @@
 
     <nav class="mod_nav">
         <ul class="nav">
-            <li class="active">推荐</li>
-            <li>排行榜</li>
-            <li>搜索</li>
+            <li data-role="tab" data-view="#rec-view">推荐</li>
+            <li data-role="tab" data-view="#rank-view">排行榜</li>
+            <li class="active" data-role="tab" data-view="#search-view">搜索</li>
         </ul>
     </nav>
 
     <div class="mod_tab">
-        <div class="tab_rec">
+        <div class="tab_rec" id="rec-view">
             <div class="ui-slider" id="slider">
 
             </div>
+            <div class="mod_radio_station">
+                <h2>电台</h2>
+                <ul class="radio_list"></ul>
+            </div>
         </div>
 
-        <div class="tab_topList" id="topList">
+        <div class="tab_topList" id="rank-view">
 
         </div>
-        <div class="tab_search" id="search">
+        <div class="tab_search active" id="search-view">
+            <div class="search_bar">
+                <div class="input_bar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input id="search_input" type="text" placeholder="搜索歌曲、歌单、专辑">
+                    <i class="fa fa-times-circle hide" aria-hidden="true"></i>
+                </div>
+                <div class="btn_cancle hide">取消</div>
+            </div>
+            <div id="record_keys" class="mod_search_record">
 
+            </div>
+            <div class="search-results">
+                <div class="song-list"></div>
+            </div>
+            <div class="search-loading">
+                <i class="loading-icon"></i>
+                <div class="loading-text">正在载入更多...</div>
+                <div class="loading-done hide">已加载全部</div>
+            </div>
+            <div id="hot_keys" class="mod_search_result">
+                <h3 class="result_tit">热门搜索</h3>
+                <div class="result_tags">
+
+                </div>
+            </div>
         </div>
     </div>
 
+    <script src="json/rec.js"></script>
+    <script src="json/topList.js"></script>
+    <script src="json/hotKey.js"></script>
+    <script src="scripts/tab.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/rec.js"></script>
+    <script src="scripts/topList.js"></script>
+    <script src="scripts/search.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 
