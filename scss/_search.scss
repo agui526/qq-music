@@ -9,9 +9,10 @@
             font-size: 14px;
             height: 36px;
             line-height: 36px;
-        } // .hide {
-        //     display: none;
-        // }
+        } 
+        .hide {
+            display: none;
+        }
         .input_bar {
             background: #fff;
             border-radius: 3px;
@@ -208,12 +209,7 @@
             text-align: center;
             height: 44px;
             line-height: 44px;
-
-            a {
-                display: inline-block;
-                line-height: 44px;
-                color: #47c88a;
-            }
+            color: #47c88a;
         }
     }
     @keyframes loading {

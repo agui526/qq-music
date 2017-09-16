@@ -1,17 +1,18 @@
 (function () {
 
-    // fetch('/json/rec.json')
-    //     .then(res => res.json())
-    //     .then(renderRec);
+    fetch('https://qq-music-api.now.sh')
+        .then(res => res.json())
+        .then(renderRec)
 
-    // fetch('/json/topList.json')
-    //     .then(res => res.json())
-    //     .then(json => json.data.topList)
-    //     .then(renderTopList);
+    fetch('https://qq-music-api.now.sh/top')
+        .then(res => res.json())
+        .then(json => json.data.topList)
+        .then(renderTopList)
 
-    renderRec(rec)
-    renderTopList(topList.data.topList)
-    renderHotKyes(hotKey.data)
+    fetch('https://qq-music-api.now.sh/hotkey')
+        .then(res => res.json())
+        .then(json => json.data)
+        .then(renderHotKyes)
 
     function renderRec(json) {
         renderSlider(json.data.slider);

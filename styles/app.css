@@ -188,6 +188,8 @@ ul, li {
     font-size: 14px;
     height: 36px;
     line-height: 36px; }
+  .tab_search .search_bar .hide {
+    display: none; }
   .tab_search .search_bar .input_bar {
     background: #fff;
     border-radius: 3px;
@@ -361,11 +363,8 @@ ul, li {
   .tab_search #record_keys .record_delete {
     text-align: center;
     height: 44px;
-    line-height: 44px; }
-    .tab_search #record_keys .record_delete a {
-      display: inline-block;
-      line-height: 44px;
-      color: #47c88a; }
+    line-height: 44px;
+    color: #47c88a; }
 
 @keyframes loading {
   from {
@@ -427,6 +426,166 @@ ul, li {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
+
+#player {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%; }
+  #player .player-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+    #player .player-container .player-background {
+      background-image: url(https://y.gtimg.cn/music/photo_new/T002R150x150M000003RMaRI1iFoYd.jpg);
+      background-size: cover;
+      background-position: bottom center;
+      filter: blur(15px);
+      transform: scale(1.15);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%; }
+    #player .player-container .player-head {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.1); }
+      #player .player-container .player-head .album-cover {
+        display: block;
+        margin-right: 15px;
+        width: 80px;
+        height: 80px; }
+      #player .player-container .player-head .song-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: calc(100% - 150px);
+        color: #fff; }
+        #player .player-container .player-head .song-info .song-name {
+          height: 30px;
+          font-size: 18px; }
+        #player .player-container .player-head .song-info .song-artist {
+          height: 21px;
+          font-size: 14px; }
+      #player .player-container .player-head .icon-action {
+        width: 44px;
+        height: 44px;
+        border: solid 1px #fff;
+        border-radius: 50%;
+        background-image: url(../images/sprite_play.png);
+        background-size: 40px 380px;
+        background-repeat: no-repeat; }
+      #player .player-container .player-head .icon-play {
+        background-position: 15px -153px; }
+      #player .player-container .player-head .icon-pause {
+        background-position: 17px -183px; }
+    #player .player-container .player-lyrics {
+      display: flex;
+      color: rgba(255, 255, 255, 0.6);
+      max-height: calc(100% - 225px);
+      padding: 36px 0 60px 0; }
+      #player .player-container .player-lyrics .lyrics-box {
+        overflow: hidden;
+        width: 100%; }
+        #player .player-container .player-lyrics .lyrics-box .player-lyrics-lines {
+          overflow: hidden;
+          height: 100%; }
+          #player .player-container .player-lyrics .lyrics-box .player-lyrics-lines .player-lyrics-line {
+            height: 42px;
+            line-height: 42px;
+            overflow: hidden;
+            padding: 0 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center; }
+          #player .player-container .player-lyrics .lyrics-box .player-lyrics-lines .active {
+            color: #31c27c; }
+    #player .player-container .player-footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative; }
+      #player .player-container .player-footer .icon-lists {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px;
+        position: absolute;
+        top: -44px; }
+        #player .player-container .player-footer .icon-lists .icons {
+          width: 40px;
+          height: 40px;
+          background-image: url(../images/sprite_play.png);
+          background-size: 40px 380px;
+          background-repeat: no-repeat; }
+        #player .player-container .player-footer .icon-lists .icon-play-list {
+          background-position: 8px -249px; }
+        #player .player-container .player-footer .icon-lists .icon-like {
+          background-position: 7px 8px; }
+      #player .player-container .player-footer .progress {
+        bottom: 56px;
+        width: 100%;
+        height: 40px; }
+        #player .player-container .player-footer .progress .time {
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          width: 55px;
+          line-height: 40px;
+          text-align: center; }
+        #player .player-container .player-footer .progress .time-start {
+          left: 0; }
+        #player .player-container .player-footer .progress .time-total {
+          right: 0; }
+        #player .player-container .player-footer .progress .progress-box {
+          line-height: 40px;
+          position: absolute;
+          left: 55px;
+          right: 55px;
+          height: 40px;
+          top: 0;
+          z-index: 1;
+          overflow: hidden; }
+          #player .player-container .player-footer .progress .progress-box .progress-bar {
+            height: 2px;
+            position: absolute;
+            top: 19px;
+            width: 100%; }
+          #player .player-container .player-footer .progress .progress-box .progress-bg {
+            background-color: rgba(0, 0, 0, 0.1); }
+          #player .player-container .player-footer .progress .progress-box .progress-load {
+            background-color: rgba(255, 255, 255, 0.2); }
+          #player .player-container .player-footer .progress .progress-box .progress-play {
+            background-color: #31c27c; }
+      #player .player-container .player-footer .actions {
+        bottom: 8px;
+        height: 50px;
+        width: 100%;
+        margin-top: 10px; }
+        #player .player-container .player-footer .actions a {
+          display: block;
+          padding: 0 55px;
+          margin: 0 50px;
+          border-radius: 99px;
+          background-color: #31c27c;
+          text-align: center;
+          font-size: 20px;
+          color: #fff;
+          height: 45px;
+          line-height: 45px;
+          background-image: url(../images/sprite_play.png);
+          background-repeat: no-repeat;
+          background-size: 43px 380px;
+          background-position: 6px -321px; }
 
 body {
   background-color: #f4f4f4;

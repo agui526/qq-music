@@ -25,30 +25,58 @@ class Search {
     onClick(e) {
         if (e.target === this.$input) {
             this.$cancel.classList.remove('hide')
-            if(this.history.length > 0) {
-                let hisHTML = this.history.map(item => `
-                    <li>
-                        <a href="javascript:;" class="record_main">
-                            <span class="icon icon_clock"></span>
-                            <span class="record_con ellipsis">${item}</span>
-                            <span class="icon icon_close"></span>
-                        </a>
-                    </li>
-                `).join('')
-                hisHTML += `
-                    <p id="record_clear_btn" class="record_delete">
-                        <a href="javascript:;">清除搜索记录</a>
-                    </p>
-                `
-                this.$history.innerHTML = hisHTML
-            }
+            // this.$delete.classList.remove('hide')
+            this.$el.querySelector('#record_keys').classList.remove('hide')
+            this.renderHis()
         }
         if (e.target === this.$cancel) {
             this.$cancel.classList.add('hide')
+            this.reset()
+            this.$hotKey.style.display = 'block'
+            this.$el.querySelector('#record_keys').classList.add('hide')
+            this.$input.value = ''
         }
         if (e.target === this.$delete) {
             this.$input.value = ''
             this.$delete.classList.add('hide')
+        }
+        if (e.target.matches('.record_con')) {
+            this.$input.value = e.target.innerHTML
+            this.$delete.classList.remove('hide')
+            this.search(this.$input.value)
+        }
+        if (e.target.matches('.icon_close')) {
+            let index = this.history.indexOf(e.target.previousElementSibling.innerHTML)
+            this.history.splice(index, 1)
+            localStorage.setItem(this.LOCAL_STORAGE_KEY, this.history)
+            this.renderHis()
+        }
+        if (e.target.matches('.record_delete')) {
+            this.history = []
+            console.log(this.history)
+            localStorage.setItem(this.LOCAL_STORAGE_KEY, this.history)
+            this.$history.innerHTML = ''
+        }
+
+    }
+
+    renderHis() {
+        if(this.history.length > 0) {
+            let hisHTML = this.history.map(item => `
+                <li>
+                    <a href="javascript:;" class="record_main">
+                        <span class="icon icon_clock"></span>
+                        <span class="record_con ellipsis">${item}</span>
+                        <span class="icon icon_close"></span>
+                    </a>
+                </li>
+            `).join('')
+            hisHTML += `
+                <p id="record_clear_btn" class="record_delete">
+                    清除搜索记录
+                </p>
+            `
+            this.$history.innerHTML = hisHTML
         }
     }
 
@@ -63,6 +91,7 @@ class Search {
             return
         }
         this.addHistory(keyword)
+        // this.$el.querySelector('#record_keys').classList.add('hide')
         this.search(keyword)
     }
 
@@ -76,7 +105,13 @@ class Search {
     }
 
     search(keyword, page) {
+        this.$el.querySelector('#record_keys').classList.add('hide')
+
+        if (this.keyword === keyword && this.songs[page || this.page]) return
+        if (this.nomore || this.fetching) return
+        if (this.keyword !== keyword) this.reset()
         this.keyword = keyword
+
         this.loading()
         fetch(`https://qq-music-api.now.sh/search?keyword=${this.keyword}&page=${this.page}`)
             .then(res => res.json())
@@ -140,7 +175,7 @@ class Search {
         this.keyword = ''
         this.nomore = false
         this.$songs.innerHTML = ''
-        this.$hotKey.style.display = 'block'
+        // this.$hotKey.style.display = 'block'
     }
 
 }

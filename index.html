@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/logo.ico">
-    <link rel="stylesheet" type="" href="styles/app.css">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="" href="styles/app.css">
     <title>QQ 音乐</title>
 </head>
 
@@ -29,7 +29,6 @@
     <div class="mod_tab">
         <div class="tab_rec" id="rec-view">
             <div class="ui-slider" id="slider">
-
             </div>
             <div class="mod_radio_station">
                 <h2>电台</h2>
@@ -38,8 +37,8 @@
         </div>
 
         <div class="tab_topList" id="rank-view">
-
         </div>
+
         <div class="tab_search active" id="search-view">
             <div class="search_bar">
                 <div class="input_bar">
@@ -67,11 +66,115 @@
                 </div>
             </div>
         </div>
+
+        <div id="player">
+            <div class="player-container">
+                <div class="player-head">
+                    <img class="album-cover" src="images/favicon.ico">
+                    <div class="song-info">
+                        <h1 class="song-name ellipsis">燕归巢</h1>
+                        <p class="song-artist ellipsis">张靓颖 / 张杰</p>
+                    </div>
+                    <span class="icon-action icon-play"></span>
+                </div>
+                <div class="player-lyrics">
+                    <div class="lyrics-box">
+                        <div class="player-lyrics-lines" style="transform: translateY(0px);">
+                            <div class="player-lyrics-line active">告白气球 - 周杰伦</div>
+
+                            <div class="player-lyrics-line">词：方文山</div>
+
+                            <div class="player-lyrics-line">曲：周杰伦</div>
+
+                            <div class="player-lyrics-line">留下唇印的嘴</div>
+
+                            <div class="player-lyrics-line">花店玫瑰 名字写错谁</div>
+
+                            <div class="player-lyrics-line">告白气球 风吹到对街</div>
+
+                            <div class="player-lyrics-line">微笑在天上飞</div>
+
+                            <div class="player-lyrics-line">你说你有点难追 想让我知难而退</div>
+
+                            <div class="player-lyrics-line">礼物不需挑最贵 只要香榭的落叶</div>
+
+                            <div class="player-lyrics-line">喔 营造浪漫的约会 不害怕搞砸一切</div>
+
+                            <div class="player-lyrics-line">拥有你就拥有 全世界</div>
+
+                            <div class="player-lyrics-line">亲爱的 爱上你 从那天起</div>
+
+                            <div class="player-lyrics-line">甜蜜的很轻易</div>
+
+                            <div class="player-lyrics-line">亲爱的 别任性 你的眼睛</div>
+
+                            <div class="player-lyrics-line">在说我愿意</div>
+
+                            <div class="player-lyrics-line">塞纳河畔 左岸的咖啡</div>
+
+                            <div class="player-lyrics-line">我手一杯 品尝你的美</div>
+
+                            <div class="player-lyrics-line">留下唇印的嘴</div>
+
+                            <div class="player-lyrics-line">花店玫瑰 名字写错谁</div>
+
+                            <div class="player-lyrics-line">告白气球 风吹到对街</div>
+
+                            <div class="player-lyrics-line">微笑在天上飞</div>
+
+                            <div class="player-lyrics-line">你说你有点难追 想让我知难而退</div>
+
+                            <div class="player-lyrics-line">礼物不需挑最贵 只要香榭的落叶</div>
+
+                            <div class="player-lyrics-line">喔 营造浪漫的约会 不害怕搞砸一切</div>
+
+                            <div class="player-lyrics-line">拥有你就拥有 全世界</div>
+
+                            <div class="player-lyrics-line">亲爱的 爱上你 从那天起</div>
+
+                            <div class="player-lyrics-line">甜蜜的很轻易</div>
+
+                            <div class="player-lyrics-line">亲爱的 别任性 你的眼睛</div>
+
+                            <div class="player-lyrics-line">在说我愿意</div>
+
+                            <div class="player-lyrics-line">亲爱的 爱上你 恋爱日记</div>
+
+                            <div class="player-lyrics-line">飘香水的回忆</div>
+
+                            <div class="player-lyrics-line">一整瓶 的梦境 全都有你</div>
+
+                            <div class="player-lyrics-line">搅拌在一起</div>
+
+                            <div class="player-lyrics-line">亲爱的别任性 你的眼睛</div>
+
+                            <div class="player-lyrics-line">在说我愿意</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-footer">
+                    <div class="icon-lists">
+                        <div class="icons icon-play-list"></div>
+                        <div class="icons icon-like"></div>
+                    </div>
+                    <div class="progress">
+                        <span class="time time-start">00:13</span>
+                        <div class="progress-box">
+                            <div class="progress-bar progress-bg"></div>
+                            <div class="progress-bar progress-load"></div>
+                            <div class="progress-bar progress-play"></div>
+                        </div>
+                        <span class="time time-total">04:58</span>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn-download">免费下载这首歌</a>
+                    </div>
+                </div>
+                <div class="player-background"></div>
+            </div>
+        </div>
     </div>
 
-    <script src="json/rec.js"></script>
-    <script src="json/topList.js"></script>
-    <script src="json/hotKey.js"></script>
     <script src="scripts/tab.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/rec.js"></script>
