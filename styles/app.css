@@ -431,7 +431,12 @@ ul, li {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  transform: translateY(-100%);
+  transition: .3s; }
+  #player.show {
+    opacity: 1;
+    transform: translateY(0); }
   #player .player-container {
     display: flex;
     flex-direction: column;
@@ -530,7 +535,7 @@ ul, li {
         #player .player-container .player-footer .icon-lists .icon-play-list {
           background-position: 8px -249px; }
         #player .player-container .player-footer .icon-lists .icon-like {
-          background-position: 7px 8px; }
+          background-position: 7px 10px; }
       #player .player-container .player-footer .progress {
         bottom: 56px;
         width: 100%;
@@ -542,9 +547,9 @@ ul, li {
           width: 55px;
           line-height: 40px;
           text-align: center; }
-        #player .player-container .player-footer .progress .time-start {
+        #player .player-container .player-footer .progress .time-elapsed {
           left: 0; }
-        #player .player-container .player-footer .progress .time-total {
+        #player .player-container .player-footer .progress .time-duration {
           right: 0; }
         #player .player-container .player-footer .progress .progress-box {
           line-height: 40px;

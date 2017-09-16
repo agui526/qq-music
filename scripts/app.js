@@ -104,5 +104,24 @@
     }
 
     let search = new Search(document.querySelector('#search-view')) 
+    let player = new Player(document.querySelector('#player'))
+
+    function onHashChange() {
+        let hash = location.hash
+        if(/^#player\?.+/.test(hash)) {
+            let matches = hash.slice(hash.indexOf('?') + 1).match(/(\w+)=([^&]+)/g)
+            let options = matches && matches.reduce((res, cur) => {
+                let arr = cur.split('=')
+                res[arr[0]] = arr[1]
+                return res
+            }, {})
+            player.play(options)
+        } else {
+            player.hide()
+        }
+    }
+
+    onHashChange()
+    window.addEventListener('hashChange', onHashChange)
 
 })()
